@@ -1,0 +1,94 @@
+/* universal */
+.sh1-regular {
+  @apply font-geist text-[18px] leading-[28px] tracking-[-1.2px];
+}
+
+.sh2-regular {
+  @apply font-grotesk text-[16px] leading-[20px] tracking-[-1px];
+}
+
+.sh2-medium {
+  @apply font-geist font-medium text-[14px] leading-[18px] tracking-[-1px];
+}
+
+.p-regular {
+  @apply font-geist text-[16px] leading-[18px] tracking-[-1px];
+}
+
+.p-medium {
+  @apply font-geist font-medium text-[16px] leading-[18px] tracking-[-1px];
+}
+
+.navbar {
+  @apply font-grotesk font-medium text-[16px] leading-[20px] tracking-[-1px];
+}
+
+/* large */
+
+.DO-L {
+  @apply font-geist font-medium text-[320px] leading-[338px] tracking-[-32px];
+}
+
+.DO-fashion {
+  @apply font-garamond italic text-[364px] leading-[338px] tracking-[-33px];
+}
+
+.D1-L {
+  @apply font-geist font-light text-[128px] leading-[216px] tracking-[-13px];
+}
+
+.D1-Fashion-L {
+  @apply font-garamond italic text-[144px] leading-[216px] tracking-[-13px];
+}
+
+.H0-L {
+  @apply font-geist text-[56px] leading-[60px] tracking-[-4.75px];
+}
+
+.SH0-L {
+  @apply font-geist text-[36px] leading-[38px] tracking-[-3.03px];
+}
+
+.IT-Medium-L {
+  @apply font-geist font-semibold text-[24px] leading-[24px] tracking-[-1px];
+}
+
+/* medium */
+
+.D0-M {
+  @apply font-geist font-medium text-[170.67px] leading-[172px] tracking-[-16.43px];
+}
+
+.D0-Fashion-M {
+  @apply font-garamond italic text-[194.13px] leading-[172px] tracking-[-16.43px];
+}
+
+.D1-M {
+  @apply font-geist font-light text-[84px] leading-[72px] tracking-[-9.07px];
+}
+
+.D1-Fashion-M {
+  @apply font-garamond italic text-[92px] leading-[86px] tracking-[-9.07px];
+}
+
+.H0-M {
+  @apply font-geist text-[42px] leading-[46px] tracking-[-3px];
+}
+
+.SH0-M {
+  @apply font-geist text-[28px] leading-[30px] tracking-[-1.5px];
+}
+
+.IT-Medium-S-M {
+  @apply font-geist font-medium text-[18px] leading-[18px] tracking-[-1px];
+}
+
+/* small */
+
+.H0-S {
+  @apply font-geist text-[36px] leading-[40px] tracking-[-2.7px];
+}
+
+.SH0-S {
+  @apply font-geist text-[24px] leading-[26px] tracking-[-1.35px];
+}
