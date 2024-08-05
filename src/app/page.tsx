@@ -1,9 +1,13 @@
-import Image from "next/image";
+import Hero from "@/components/hero/Hero";
+import Projects from "@/components/projects/Projects";
+import Services from "@/components/services/Services";
 
 export default function Home() {
   return (
-    <main>
-
+    <main className="bg-theme-black min-h-screen">
+      <Hero/>
+      <Services/>
+      <Projects/>
     </main>
   );
 }

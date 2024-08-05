@@ -4,6 +4,7 @@ import "./globals.css";
 import './typography.css';
 import { FC } from "react";
 import { GeistSans } from "geist/font/sans";
+import Nav from "@/components/nav/Nav";
 
 const eb_garamond = EB_Garamond({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ const RootLayout: FC<Props> = (props) => {
         ${GeistSans.variable}
         `}
       >
+        <Nav/>
         {props.children}
       </body>
     </html>

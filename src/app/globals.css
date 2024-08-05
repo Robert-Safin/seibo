@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.x-pad {
+  @apply px-[18px] md:px-[24px] lg:px-[36px]
+}
+
+
+.aspect-height {
+  height: calc(33vw * 1.49);
+}
