@@ -1,10 +1,12 @@
 const SmallServices = () => {
   return (
     <div className="x-pad pt-[92px] pb-[72px]">
-      <h1 className="D1-Fashion-M text-theme-white">Our</h1>
-      <div className="flex items-end space-x-6 mb-[96px]">
-        <h1 className="D1-M text-theme-white">Services</h1>
-        <p className="text-theme-gray sh2-medium">[OS_04]</p>
+      <div className="md:flex md:items-end md:space-x-4 mb-[96px]">
+        <h1 className="D1-Fashion-M text-theme-white">Our</h1>
+        <div className="flex items-end space-x-2 ">
+          <h1 className="D1-M text-theme-white">Services</h1>
+          <p className="text-theme-gray sh2-medium">[OS_04]</p>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2">

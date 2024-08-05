@@ -1,7 +1,7 @@
 const LargeServices = () => {
   return (
     <div className="pt-[192px] pb-[216px] x-pad max-w-[1920px] mx-auto">
-      <p className="space-x-[40px]">
+      <p className="space-x-[20px]">
         <span className="D1-Fashion-L text-theme-white">Our</span>
         <span className="D1-L text-theme-white">Services</span>
         <span className="text-theme-gray sh2-medium">[OS_04]</span>
