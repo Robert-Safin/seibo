@@ -12,7 +12,9 @@ const LargeServices = () => {
           <h6 className="text-theme-white H0-M group-hover:text-theme-black transition-all duration-700">
             WEBSITE / MOBILE DESIGN
           </h6>
-          <p className="absolute top-32 xl:top-40 sh2-regular text-theme-black opacity-0 group-hover:opacity-100 transition-all duration-700">READ MORE</p>
+          <p className="absolute top-32 xl:top-40 sh2-regular text-theme-black opacity-0 group-hover:opacity-100 transition-all duration-700">
+            READ MORE
+          </p>
           <p className="text-theme-white SH0-M group-hover:text-theme-black transition-all duration-700">
             UI Design / UX Design / Interaction Design / Motion Graphics /
             Responsive Design
@@ -23,7 +25,9 @@ const LargeServices = () => {
           <h6 className="text-theme-white H0-M group-hover:text-theme-black transition-all duration-700">
             FRONT-END DEVELOPMENT
           </h6>
-          <p className="absolute top-32 xl:top-40 sh2-regular text-theme-black opacity-0 group-hover:opacity-100 transition-all duration-700">READ MORE</p>
+          <p className="absolute top-32 xl:top-40 sh2-regular text-theme-black opacity-0 group-hover:opacity-100 transition-all duration-700">
+            READ MORE
+          </p>
           <p className="text-theme-white SH0-M group-hover:text-theme-black transition-all duration-700">
             Custom / Animations / Transitions / Responsiveness / SEO / Caching /
             Analytics
@@ -36,7 +40,9 @@ const LargeServices = () => {
           <h6 className="text-theme-white H0-M group-hover:text-theme-black transition-all duration-700">
             BACK-END DEVELOPMENT
           </h6>
-          <p className="absolute top-32 xl:top-40 sh2-regular text-theme-black opacity-0 group-hover:opacity-100 transition-all duration-700">READ MORE</p>
+          <p className="absolute top-32 xl:top-40 sh2-regular text-theme-black opacity-0 group-hover:opacity-100 transition-all duration-700">
+            READ MORE
+          </p>
           <p className="text-theme-white SH0-M group-hover:text-theme-black transition-all duration-700">
             API integration / API Development / Database Integrations /
             Authentication / Authorization / CMS / Storage Systems
@@ -50,7 +56,9 @@ const LargeServices = () => {
           <h6 className="text-theme-white H0-M group-hover:text-theme-black transition-all duration-700">
             MACHINE LEARNING
           </h6>
-          <p className="absolute top-32 xl:top-40 sh2-regular text-theme-black opacity-0 group-hover:opacity-100 transition-all duration-700">READ MORE</p>
+          <p className="absolute top-32 xl:top-40 sh2-regular text-theme-black opacity-0 group-hover:opacity-100 transition-all duration-700">
+            READ MORE
+          </p>
           <p className="text-theme-white SH0-M group-hover:text-theme-black transition-all duration-700">
             Recommendation Systems / Image & Video Recognition / Predictive
             Analytics / NLP /Anomaly Detection

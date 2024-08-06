@@ -72,10 +72,10 @@ const Card: FC<Props> = (props) => {
         style={{ backgroundColor: props.bgHex }}
       >
         <div className="flex h-full justify-center items-center">
-          <div className="iframe-container flex">
+          <div className="flex w-[154px] h-[96px] relative overflow-hidden">
             <iframe
               src={props.iframeSrc}
-              className="object-cover w-[200px] h-[200px] scaled-iframe"
+              className="object-cover w-[1520px] h-[960px] absolute origin-top-left scale-[10%]"
             ></iframe>
           </div>
         </div>
@@ -101,7 +101,6 @@ const Card: FC<Props> = (props) => {
 //   overflow: hidden; /* Hide overflow content */
 //   position: relative;
 // }
-
 
 // .scaled-iframe {
 //   width: 1440px; /* Original width of the iframe content */

@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { FC } from "react";
 
@@ -55,7 +56,7 @@ type Props = {
 
 const Card: FC<Props> = (props) => {
   return (
-    <div className="relative  z-0 w-full h-[473px] xl:h-[651px]">
+    <div className="relative  z-0 w-full h-[473px] xl:h-[651px] group">
       <Image
         src={props.imagePath}
         alt={props.title}
@@ -63,6 +64,18 @@ const Card: FC<Props> = (props) => {
         height={1000}
         className="absolute top-0 -z-10 object-cover  w-full h-[473px] xl:h-[651px]"
       />
+
+      <div
+        className="absolute m-auto left-0 right-0 top-0 bottom-0 z-10 w-[200px] h-[200px]"
+        style={{ backgroundColor: props.bgHex }}
+      >
+        <iframe
+          src={props.iframeSrc}
+          className="object-cover w-[2020px] h-[2000px] absolute origin-top-left scale-[10%]
+          opacity-0 group-hover:opacity-100  transition-all duration-700"
+        ></iframe>
+      </div>
+
       <div className="flex w-full justify-between py-[24px] px-[18px]">
         <p className="IT-Medium-S-M text-theme-white uppercase">{props.year}</p>
         <p className="IT-Medium-S-M text-theme-white uppercase">
