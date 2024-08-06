@@ -18,7 +18,7 @@ const SmallProjects = () => {
           year="2024"
           title="Quantico"
           bgHex="#CEB267"
-          iframeSrc="https://quanticotc.com"
+          iframeSrc="https://quanticotc.com/"
         />
         <Card
           imagePath="/assets/project-cards/elysium.png"
