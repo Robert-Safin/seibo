@@ -94,3 +94,19 @@ const Card: FC<Props> = (props) => {
     </div>
   );
 };
+
+// .iframe-container {
+//   width: 154px; /* Set the desired width */
+//   height: 96px; /* Set the desired height */
+//   overflow: hidden; /* Hide overflow content */
+//   position: relative;
+// }
+
+
+// .scaled-iframe {
+//   width: 1440px; /* Original width of the iframe content */
+//   height: 1000px; /* Original height of the iframe content */
+//   transform: scale(0.105); /* Adjust the scale as needed */
+//   transform-origin: 0 0; /* Transform from the top left */
+//   position: absolute;
+// }
