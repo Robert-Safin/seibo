@@ -9,7 +9,7 @@ const Projects = () => {
       <SmallProjects/>
     </div>
     <div className="hidden lg:block">
-      {/* <LargeProjects/> */}
+      <LargeProjects/>
     </div>
     </>
   )
