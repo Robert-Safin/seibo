@@ -1,5 +1,6 @@
+'use client'
 import Image from "next/image";
-import { FC } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 
 const SmallProjects = () => {
   return (
@@ -47,7 +48,6 @@ const SmallProjects = () => {
 };
 
 export default SmallProjects;
-
 type Props = {
   imagePath: string;
   year: string;
@@ -57,6 +57,31 @@ type Props = {
 };
 
 const Card: FC<Props> = (props) => {
+  const iframeRef = useRef(null);
+  const [isIntersecting, setIsIntersecting] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsIntersecting(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '0px 0px 200px 0px' } // Adjust rootMargin as needed
+    );
+
+    if (iframeRef.current) {
+      observer.observe(iframeRef.current);
+    }
+
+    return () => {
+      if (iframeRef.current) {
+        observer.unobserve(iframeRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="relative w-full h-[335px] z-0">
       <Image
@@ -67,20 +92,21 @@ const Card: FC<Props> = (props) => {
         className="absolute -z-10 w-full h-[335px] object-cover"
       />
       <div
-        className={`absolute z-10 w-[191px] h-[191px] m-auto left-0 right-0 top-0 bottom-0  `}
+        className={`absolute z-10 w-[191px] h-[191px] m-auto left-0 right-0 top-0 bottom-0`}
         style={{ backgroundColor: props.bgHex }}
       >
         <div className="flex h-full justify-center items-center">
-          <div className="iframe-container flex">
-            <iframe
-              loading="lazy"
-              src={props.iframeSrc}
-              className="object-cover w-[200px] h-[200px] scaled-iframe"
-            />
+          <div className="iframe-container flex" ref={iframeRef}>
+            {isIntersecting && (
+              <iframe
+                loading="lazy"
+                src={props.iframeSrc}
+                className="object-cover w-[200px] h-[200px] scaled-iframe"
+              />
+            )}
           </div>
         </div>
       </div>
-
       <div className="z-0 py-[18px] px-[12px]">
         <div className="flex w-full justify-between">
           <p className="IT-Medium-S-M text-theme-white uppercase">
