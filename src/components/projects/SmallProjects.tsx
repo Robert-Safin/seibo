@@ -27,20 +27,20 @@ const SmallProjects = () => {
           bgHex="#4A0915"
           iframeSrc="https://elysium-beta.vercel.app/"
         />
-        {/* <Card
+        <Card
           imagePath="/assets/project-cards/symbobtic.png"
           year="2023"
           title="Symbobtic"
           bgHex="#000000"
           iframeSrc="https://symbobtic.vercel.app/"
-        /> */}
-        <Card
+        />
+        {/* <Card
           imagePath="/assets/project-cards/gaes.png"
           year="2023"
           title="GAES"
           bgHex="#989898"
           iframeSrc="https://gaes.ae/"
-        />
+        /> */}
       </div>
     </div>
   );
