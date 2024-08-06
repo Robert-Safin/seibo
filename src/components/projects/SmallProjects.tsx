@@ -27,7 +27,7 @@ const SmallProjects = () => {
           bgHex="#4A0915"
           iframeSrc="https://elysium-beta.vercel.app/"
         />
-        <Card
+        {/* <Card
           imagePath="/assets/project-cards/symbobtic.png"
           year="2023"
           title="Symbobtic"
@@ -40,7 +40,7 @@ const SmallProjects = () => {
           title="GAES"
           bgHex="#989898"
           iframeSrc="https://gaes.ae/"
-        />
+        /> */}
       </div>
     </div>
   );
