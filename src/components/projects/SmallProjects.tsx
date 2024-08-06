@@ -33,14 +33,14 @@ const SmallProjects = () => {
           title="Symbobtic"
           bgHex="#000000"
           iframeSrc="https://symbobtic.vercel.app/"
-        />
+        /> */}
         <Card
           imagePath="/assets/project-cards/gaes.png"
           year="2023"
           title="GAES"
           bgHex="#989898"
           iframeSrc="https://gaes.ae/"
-        /> */}
+        />
       </div>
     </div>
   );
