@@ -13,7 +13,7 @@ const SmallProjects = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[6px]">
-        <Card
+        {/* <Card
           imagePath="/assets/project-cards/quantico.png"
           year="2024"
           title="Quantico"
@@ -26,7 +26,7 @@ const SmallProjects = () => {
           title="Elysium"
           bgHex="#4A0915"
           iframeSrc="https://elysium-beta.vercel.app/"
-        />
+        /> */}
         <Card
           imagePath="/assets/project-cards/symbobtic.png"
           year="2023"
@@ -34,13 +34,13 @@ const SmallProjects = () => {
           bgHex="#000000"
           iframeSrc="https://symbobtic.vercel.app/"
         />
-        {/* <Card
+        <Card
           imagePath="/assets/project-cards/gaes.png"
           year="2023"
           title="GAES"
           bgHex="#989898"
           iframeSrc="https://gaes.ae/"
-        /> */}
+        />
       </div>
     </div>
   );
