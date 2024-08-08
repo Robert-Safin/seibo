@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
 import { FC } from "react";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
+import Iframe from "react-iframe";
+
 const SmallProjects = () => {
   return (
     <div className="x-pad pt-[128px]">
@@ -74,16 +76,25 @@ const Card: FC<Props> = (props) => {
       <motion.div
         className={`absolute z-10 w-[191px] h-[191px] m-auto left-0 right-0 top-0 bottom-0`}
         style={{ backgroundColor: props.bgHex }}
-        initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        transition={{duration: 3}}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 3 }}
       >
         <div className="flex h-full justify-center items-center">
           <div className="flex w-[154px] h-[96px] relative overflow-hidden">
-            <iframe
+            <Iframe
+              url={props.iframeSrc}
+              width="1520px"
+              height="960px"
+              id=""
+              className="scale-[10%] origin-top-left"
+              display="block"
+              position="absolute"
+            />
+            {/* <iframe
               src={props.iframeSrc}
-              className="object-cover w-[1520px] h-[960px] absolute "
-            ></iframe>
+              className="object-cover w-[1520px] h-[960px] absolute origin-top-left scale-[10%]"
+            ></iframe> */}
           </div>
         </div>
       </motion.div>
