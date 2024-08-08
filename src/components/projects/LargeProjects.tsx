@@ -1,7 +1,7 @@
-'use client';
+
 import Image from "next/image";
 import { FC } from "react";
-import { motion } from "framer-motion";
+
 const LargeProjects = () => {
   return (
     <div className="x-pad max-w-[1920px] mx-auto pt-[192px]">
@@ -66,23 +66,20 @@ const Card: FC<Props> = (props) => {
         alt={props.title}
         width={1000}
         height={1000}
-        className="absolute top-0 -z-20 object-cover w-full h-[473px] xl:h-[651px]"
+        className="absolute top-0 -z-20 object-cover  w-full h-[473px] xl:h-[651px]"
       />
 
-      <motion.div
+      <div
         className="absolute m-auto left-0 right-0 top-0 bottom-0 -z-10 w-[200px] h-[200px]
         opacity-0 group-hover:opacity-100  transition-all duration-700"
         style={{ backgroundColor: props.bgHex }}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 3}}
       >
         <iframe
           src={props.iframeSrc}
           className="object-cover w-[2020px] h-[2000px] absolute origin-top-left scale-[10%]
           "
         ></iframe>
-      </motion.div>
+      </div>
 
       <div className="flex w-full justify-between py-[24px] px-[18px]">
         <p className="IT-Medium-S-M text-theme-white uppercase">{props.year}</p>
