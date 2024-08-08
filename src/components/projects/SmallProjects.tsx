@@ -16,7 +16,6 @@ const SmallProjects = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[6px]">
         <Card
-          id="1"
           imagePath="/assets/project-cards/quantico.png"
           year="2024"
           title="Quantico"
@@ -24,7 +23,6 @@ const SmallProjects = () => {
           iframeSrc="https://quanticotc.com/"
         />
         <Card
-          id="2"
           imagePath="/assets/project-cards/elysium.png"
           year="2023"
           title="Elysium"
@@ -32,7 +30,6 @@ const SmallProjects = () => {
           iframeSrc="https://elysium-beta.vercel.app/"
         />
         <Card
-          id="3"
           imagePath="/assets/project-cards/symbobtic.png"
           year="2023"
           title="Symbobtic"
@@ -40,7 +37,6 @@ const SmallProjects = () => {
           iframeSrc="https://symbobtic.vercel.app/"
         />
         <Card
-          id="4"
           imagePath="/assets/project-cards/gaes.png"
           year="2023"
           title="GAES"
@@ -64,12 +60,11 @@ type Props = {
   title: string;
   bgHex: string;
   iframeSrc: string;
-  id: string;
 };
 
 const Card: FC<Props> = (props) => {
   return (
-    <div className="relative w-full h-[335px] z-0" id={props.id}>
+    <div className="relative w-full h-[335px] z-0">
       <Image
         src={props.imagePath}
         width={1000}
@@ -87,6 +82,7 @@ const Card: FC<Props> = (props) => {
         <div className="flex h-full justify-center items-center">
           <div className="flex w-[154px] h-[96px] relative overflow-hidden">
             <iframe
+              scrolling="no"
               src={props.iframeSrc}
               className="object-cover w-[1520px] h-[960px] absolute origin-top-left scale-[10%]"
             ></iframe>
