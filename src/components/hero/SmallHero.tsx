@@ -1,5 +1,24 @@
+'use client'
+import { useEffect } from 'react';
 
 const SmallHero = () => {
+  useEffect(() => {
+    const videos = document.querySelectorAll('video');
+    const playVideos = () => {
+      videos.forEach(video => {
+        video.play().catch(error => {
+          console.error('Error trying to play video:', error);
+        });
+      });
+    };
+
+    window.addEventListener('click', playVideos, { once: true });
+
+    return () => {
+      window.removeEventListener('click', playVideos);
+    };
+  }, []);
+
   return (
     <>
       <div className="pt-[130px] x-pad">
@@ -17,33 +36,41 @@ const SmallHero = () => {
           CURRENTLY IN: BALI, IDN
         </h4>
         <div className="flex flex-col space-y-3">
-          <video autoPlay muted loop
+          <video
+            autoPlay
+            muted
+            loop
             src={"/assets/hero/purple.mp4"}
             width={1000}
             height={1000}
             className="h-[48px] object-cover"
-
           />
-          <video autoPlay muted loop
+          <video
+            autoPlay
+            muted
+            loop
             src={"/assets/hero/white.mp4"}
             width={1000}
             height={1000}
             className="h-[117px] object-cover"
-
           />
-          <video autoPlay muted loop
+          <video
+            autoPlay
+            muted
+            loop
             src={"/assets/hero/red.mp4"}
             width={1000}
             height={1000}
             className="h-[61px] object-cover"
-
           />
-          <video autoPlay muted loop
+          <video
+            autoPlay
+            muted
+            loop
             src={"/assets/hero/orange.mp4"}
             width={1000}
             height={1000}
             className="h-[84px] object-cover"
-
           />
         </div>
       </div>
