@@ -82,10 +82,10 @@ const Card: FC<Props> = (props) => {
         <div className="flex h-full justify-center items-center">
           <div className="flex w-[154px] h-[96px] relative overflow-hidden">
             <iframe
-              scrolling="no"
+              loading="eager"
               src={props.iframeSrc}
               className="object-cover w-[1520px] h-[960px] absolute origin-top-left scale-[10%]"
-            ></iframe>
+            />
           </div>
         </div>
       </motion.div>
