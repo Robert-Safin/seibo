@@ -1,24 +1,4 @@
-'use client'
-import { useEffect } from 'react';
-
 const SmallHero = () => {
-  useEffect(() => {
-    const videos = document.querySelectorAll('video');
-    const playVideos = () => {
-      videos.forEach(video => {
-        video.play().catch(error => {
-          console.error('Error trying to play video:', error);
-        });
-      });
-    };
-
-    window.addEventListener('click', playVideos, { once: true });
-
-    return () => {
-      window.removeEventListener('click', playVideos);
-    };
-  }, []);
-
   return (
     <>
       <div className="pt-[130px] x-pad">
