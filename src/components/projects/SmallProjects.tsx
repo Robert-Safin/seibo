@@ -72,7 +72,7 @@ const Card: FC<Props> = (props) => {
         className="absolute -z-10 w-full h-[335px] object-cover"
       />
       <motion.div
-        className={`absolute z-10 w-[191px] h-[191px] m-auto left-0 right-0 top-0 bottom-0  `}
+        className={`absolute z-10 w-[191px] h-[191px] m-auto left-0 right-0 top-0 bottom-0`}
         style={{ backgroundColor: props.bgHex }}
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
@@ -82,7 +82,7 @@ const Card: FC<Props> = (props) => {
           <div className="flex w-[154px] h-[96px] relative overflow-hidden">
             <iframe
               src={props.iframeSrc}
-              className="object-cover w-[1520px] h-[960px] absolute origin-top-left scale-[10%]"
+              className="object-cover w-[1520px] h-[960px] absolute "
             ></iframe>
           </div>
         </div>
