@@ -43,6 +43,10 @@ const SmallProjects = () => {
           iframeSrc="https://gaes.ae/"
         />
       </div>
+      <div className="flex justify-between pt-[36px]">
+        <p className="text-theme-gray sh2-medium">© 2023-2024</p>
+        <p className="text-theme-gray sh2-medium">VIEW MORE</p>
+      </div>
     </div>
   );
 };

@@ -40,6 +40,10 @@ const LargeProjects = () => {
           iframeSrc="https://gaes.ae/"
         />
       </div>
+      <div className="flex justify-between pt-[36px] lg:pt-[64px]">
+        <p className="text-theme-gray sh2-medium">© 2023-2024</p>
+        <p className="text-theme-gray sh2-medium">VIEW MORE</p>
+      </div>
     </div>
   );
 };
@@ -56,23 +60,24 @@ type Props = {
 
 const Card: FC<Props> = (props) => {
   return (
-    <div className="relative  z-0 w-full h-[473px] xl:h-[651px] group">
+    <div className="relative z-0 w-full h-[473px] xl:h-[651px] group">
       <Image
         src={props.imagePath}
         alt={props.title}
         width={1000}
         height={1000}
-        className="absolute top-0 -z-10 object-cover  w-full h-[473px] xl:h-[651px]"
+        className="absolute top-0 -z-20 object-cover  w-full h-[473px] xl:h-[651px]"
       />
 
       <div
-        className="absolute m-auto left-0 right-0 top-0 bottom-0 z-10 w-[200px] h-[200px]"
+        className="absolute m-auto left-0 right-0 top-0 bottom-0 -z-10 w-[200px] h-[200px]
+        opacity-0 group-hover:opacity-100  transition-all duration-700"
         style={{ backgroundColor: props.bgHex }}
       >
         <iframe
           src={props.iframeSrc}
           className="object-cover w-[2020px] h-[2000px] absolute origin-top-left scale-[10%]
-          opacity-0 group-hover:opacity-100  transition-all duration-700"
+          "
         ></iframe>
       </div>
 
