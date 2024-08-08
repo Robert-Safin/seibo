@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { FC } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const SmallProjects = () => {
   return (
@@ -79,7 +80,11 @@ const Card: FC<Props> = (props) => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 3 }}
       >
-        <div className="flex h-full justify-center items-center">
+        <Link
+          className="flex h-full justify-center items-center"
+          href={props.iframeSrc}
+          target="_blank"
+        >
           <div className="flex w-[154px] h-[96px] relative overflow-hidden">
             <iframe
               loading="eager"
@@ -87,7 +92,7 @@ const Card: FC<Props> = (props) => {
               className="object-cover w-[720px] h-[560px] absolute origin-top-left scale-[20%]"
             />
           </div>
-        </div>
+        </Link>
       </motion.div>
 
       <div className="z-0 py-[18px] px-[12px]">
