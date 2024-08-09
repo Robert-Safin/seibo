@@ -7,10 +7,15 @@ const SmallHero = () => {
   const loadStatus = useRef([false, false, false, false]);
 
   const handleLoadedData = (index: number) => {
+    console.log("loaded #", index);
     loadStatus.current[index] = true;
     if (loadStatus.current.every((status) => status === true)) {
       setLoaded(true);
       console.log("All videos loaded");
+      document.getElementsByClassName("vid")[0].play();
+      document.getElementsByClassName("vid")[1].play();
+      document.getElementsByClassName("vid")[2].play();
+      document.getElementsByClassName("vid")[3].play();
     }
   };
 
@@ -39,7 +44,7 @@ const SmallHero = () => {
             src={"/assets/hero/purple.mp4"}
             width={1000}
             height={1000}
-            className="h-[48px] object-cover"
+            className="h-[48px] object-cover vid"
             onLoadedData={() => handleLoadedData(0)}
           />
 
@@ -51,7 +56,7 @@ const SmallHero = () => {
             src={"/assets/hero/white.mp4"}
             width={1000}
             height={1000}
-            className="h-[117px] object-cover"
+            className="h-[117px] object-cover vid"
             onLoadedData={() => handleLoadedData(1)}
           />
           <video
@@ -62,7 +67,7 @@ const SmallHero = () => {
             src={"/assets/hero/red.mp4"}
             width={1000}
             height={1000}
-            className="h-[61px] object-cover"
+            className="h-[61px] object-cover vid"
             onLoadedData={() => handleLoadedData(2)}
           />
           <video
@@ -73,7 +78,7 @@ const SmallHero = () => {
             src={"/assets/hero/orange.mp4"}
             width={1000}
             height={1000}
-            className="h-[84px] object-cover"
+            className="h-[84px] object-cover vid"
             onLoadedData={() => handleLoadedData(3)}
           />
         </div>
