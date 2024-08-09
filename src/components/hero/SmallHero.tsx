@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 const SmallHero = () => {
   return (
     <>
@@ -26,6 +28,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[48px] object-cover"
           />
+
           <video
             playsInline
             autoPlay
