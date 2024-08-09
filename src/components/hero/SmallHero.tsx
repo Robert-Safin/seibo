@@ -3,8 +3,14 @@
 import { useState } from "react";
 
 const SmallHero = () => {
-  const [loaded, setLoaded] = useState([false, false, false, false]);
-  console.log(loaded);
+  const [loaded1, setLoaded1] = useState(false);
+  const [loaded2, setLoaded2] = useState(false);
+  const [loaded3, setLoaded3] = useState(false);
+  const [loaded4, setLoaded4] = useState(false);
+  console.log("loaded1", loaded1);
+  console.log("loaded2", loaded2);
+  console.log("loaded3", loaded3);
+  console.log("loaded4", loaded4);
 
   return (
     <>
@@ -33,8 +39,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[48px] object-cover"
             onLoadedData={() => {
-              setLoaded([true, loaded[1], loaded[2], loaded[3]]);
-              console.log("loaded 1");
+              setLoaded1(true);
             }}
           />
 
@@ -48,8 +53,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[117px] object-cover"
             onLoadedData={() => {
-              setLoaded([loaded[0], true, loaded[2], loaded[3]]);
-              console.log("loaded 2");
+              setLoaded2(true);
             }}
           />
           <video
@@ -62,8 +66,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[61px] object-cover"
             onLoadedData={() => {
-              setLoaded([loaded[0], loaded[1], true, loaded[3]]);
-              console.log("loaded 3");
+              setLoaded3(true);
             }}
           />
           <video
@@ -76,18 +79,20 @@ const SmallHero = () => {
             height={1000}
             className="h-[84px] object-cover"
             onLoadedData={() => {
-              setLoaded([loaded[0], loaded[1], loaded[2], true]);
-              console.log("loaded 4");
+              setLoaded4(true);
             }}
           />
         </div>
       </div>
 
-      {loaded.some((load) => load == false) && (
-        <div className="bg-black pt-[130px] x-pad w-screen h-screen absolute top-0 border-white">
-          <p className="text-white text-4xl"> LOADING ...</p>
-        </div>
-      )}
+      {loaded1 !== true &&
+        loaded2 !== true &&
+        loaded3 !== true &&
+        loaded4 !== true && (
+          <div className="bg-black pt-[130px] x-pad w-screen h-screen absolute top-0 border-white">
+            <p className="text-white text-4xl"> LOADING ...</p>
+          </div>
+        )}
     </>
   );
 };
