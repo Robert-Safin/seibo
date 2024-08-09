@@ -85,10 +85,10 @@ const SmallHero = () => {
         </div>
       </div>
 
-      {loaded1 !== true &&
-        loaded2 !== true &&
-        loaded3 !== true &&
-        loaded4 !== true && (
+      {loaded1 === true &&
+        loaded2 === true &&
+        loaded3 === true &&
+        loaded4 === true && (
           <div className="bg-black pt-[130px] x-pad w-screen h-screen absolute top-0 border-white">
             <p className="text-white text-4xl"> LOADING ...</p>
           </div>
