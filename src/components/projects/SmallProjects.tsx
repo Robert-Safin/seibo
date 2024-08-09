@@ -1,9 +1,8 @@
 "use client";
 import Image from "next/image";
 import { FC } from "react";
-import { motion } from "framer-motion";
 import Link from "next/link";
-
+import { motion } from "framer-motion";
 const SmallProjects = () => {
   return (
     <div className="x-pad pt-[128px]">
@@ -22,6 +21,7 @@ const SmallProjects = () => {
           title="Quantico"
           bgHex="#CEB267"
           iframeSrc="https://quanticotc.com/"
+          videoPath="/assets/project-cards/quantico.mp4"
         />
         <Card
           imagePath="/assets/project-cards/elysium.png"
@@ -29,6 +29,7 @@ const SmallProjects = () => {
           title="Elysium"
           bgHex="#4A0915"
           iframeSrc="https://elysium-beta.vercel.app/"
+          videoPath="/assets/project-cards/elysium.mp4"
         />
         <Card
           imagePath="/assets/project-cards/symbobtic.png"
@@ -36,6 +37,7 @@ const SmallProjects = () => {
           title="Symbobtic"
           bgHex="#000000"
           iframeSrc="https://symbobtic.vercel.app/"
+          videoPath="/assets/project-cards/symbobtic.mp4"
         />
         <Card
           imagePath="/assets/project-cards/gaes.png"
@@ -43,6 +45,7 @@ const SmallProjects = () => {
           title="GAES"
           bgHex="#989898"
           iframeSrc="https://gaes.ae/"
+          videoPath="/assets/project-cards/gaes.mp4"
         />
       </div>
       <div className="flex justify-between pt-[36px]">
@@ -61,39 +64,41 @@ type Props = {
   title: string;
   bgHex: string;
   iframeSrc: string;
+  videoPath: string;
 };
 
 const Card: FC<Props> = (props) => {
   return (
-    <div className="relative w-full h-[335px] z-0">
+    <div className="relative w-full h-[90vw] z-0 md:w-full md:h-[50vw]">
       <Image
         src={props.imagePath}
         width={1000}
         height={1000}
         alt={props.title}
-        className="absolute -z-10 w-full h-[335px] object-cover"
+        className="absolute -z-10 h-full object-cover"
       />
-      <motion.div
-        className={`absolute z-10 w-[191px] h-[191px] m-auto left-0 right-0 top-0 bottom-0`}
+      <div
+        className={`absolute z-10 w-[50%] h-[50%] m-auto left-0 right-0 top-0 bottom-0`}
         style={{ backgroundColor: props.bgHex }}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 3 }}
       >
         <Link
           className="flex h-full justify-center items-center"
           href={props.iframeSrc}
           target="_blank"
         >
-          <div className="flex w-[154px] h-[96px] relative overflow-hidden">
-            <iframe
-              loading="eager"
-              src={props.iframeSrc}
-              className="object-cover w-[720px] h-[560px] absolute origin-top-left scale-[20%]"
-            />
-          </div>
+          <motion.video
+            onLoad={(e) => e.currentTarget.play()}
+            autoPlay
+            loop
+            src={props.videoPath}
+            muted
+            className="object-cover w-[90%]"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          />
         </Link>
-      </motion.div>
+      </div>
 
       <div className="z-0 py-[18px] px-[12px]">
         <div className="flex w-full justify-between">

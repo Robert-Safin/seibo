@@ -1,5 +1,5 @@
-
 import Image from "next/image";
+import Link from "next/link";
 import { FC } from "react";
 
 const LargeProjects = () => {
@@ -17,6 +17,7 @@ const LargeProjects = () => {
           title="Quantico"
           bgHex="#CEB267"
           iframeSrc="https://quanticotc.com"
+          videoPath="/assets/project-cards/quantico.mp4"
         />
         <Card
           imagePath="/assets/project-cards/elysium.png"
@@ -24,6 +25,7 @@ const LargeProjects = () => {
           title="Elysium"
           bgHex="#4A0915"
           iframeSrc="https://elysium-beta.vercel.app/"
+          videoPath="/assets/project-cards/elysium.mp4"
         />
         <Card
           imagePath="/assets/project-cards/symbobtic.png"
@@ -31,6 +33,7 @@ const LargeProjects = () => {
           title="Symbobtic"
           bgHex="#000000"
           iframeSrc="https://symbobtic.vercel.app/"
+          videoPath="/assets/project-cards/symbobtic.mp4"
         />
         <Card
           imagePath="/assets/project-cards/gaes.png"
@@ -38,6 +41,7 @@ const LargeProjects = () => {
           title="GAES"
           bgHex="#989898"
           iframeSrc="https://gaes.ae/"
+          videoPath="/assets/project-cards/gaes.mp4"
         />
       </div>
       <div className="flex justify-between pt-[36px] lg:pt-[64px]">
@@ -52,6 +56,7 @@ export default LargeProjects;
 
 type Props = {
   imagePath: string;
+  videoPath: string;
   year: string;
   title: string;
   bgHex: string;
@@ -60,32 +65,42 @@ type Props = {
 
 const Card: FC<Props> = (props) => {
   return (
-    <div className="relative z-0 w-full h-[473px] xl:h-[651px] group">
+    <div className="relative w-full h-[50vw] z-0 group">
       <Image
         src={props.imagePath}
-        alt={props.title}
         width={1000}
         height={1000}
-        className="absolute top-0 -z-20 object-cover  w-full h-[473px] xl:h-[651px]"
+        alt={props.title}
+        className="absolute -z-10 h-full object-cover"
       />
-
       <div
-        className="absolute m-auto left-0 right-0 top-0 bottom-0 -z-10 w-[200px] h-[200px]
-        opacity-0 group-hover:opacity-100  transition-all duration-700"
+        className={`absolute z-10 w-[50%] h-[50%] m-auto left-0 right-0 top-0 bottom-0`}
         style={{ backgroundColor: props.bgHex }}
       >
-        <iframe
-          src={props.iframeSrc}
-          className="object-cover w-[2020px] h-[2000px] absolute origin-top-left scale-[10%]
-          "
-        ></iframe>
+        <Link
+          className="flex h-full justify-center items-center"
+          href={props.iframeSrc}
+          target="_blank"
+        >
+          <video
+            autoPlay
+            loop
+            src={props.videoPath}
+            muted
+            className="object-cover w-[90%] opacity-0 group-hover:opacity-100 transition-all duration-700"
+          />
+        </Link>
       </div>
 
-      <div className="flex w-full justify-between py-[24px] px-[18px]">
-        <p className="IT-Medium-S-M text-theme-white uppercase">{props.year}</p>
-        <p className="IT-Medium-S-M text-theme-white uppercase">
-          {props.title}
-        </p>
+      <div className="z-0 py-[18px] px-[12px]">
+        <div className="flex w-full justify-between">
+          <p className="IT-Medium-S-M text-theme-white uppercase">
+            {props.year}
+          </p>
+          <p className="IT-Medium-S-M text-theme-white uppercase">
+            {props.title}
+          </p>
+        </div>
       </div>
     </div>
   );

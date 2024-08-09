@@ -9,6 +9,7 @@ import Nav from "@/components/nav/Nav";
 const eb_garamond = EB_Garamond({
   subsets: ["latin"],
   variable: "--eb-garamond",
+  style: "italic"
 });
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],

@@ -7,7 +7,7 @@ const Contact = () => {
       pt-[128px] md:pt-[200px] lg:pt-[250px] xl:pt-[440px]
       pb-[64px] md:pb-[105px] lg:pb-[51px] xl:pb-[96px]"
     >
-      <p className="p-medium text-theme-gray pl-[25vw] md:pl-[45vw] xl:pl-[50vw] md:p-medium">
+      <p className="p-medium text-theme-gray pl-[25vw] md:pl-[45vw] xl:pl-[50vw] uppercase">
         Ready to start a project?
       </p>
 
@@ -68,11 +68,11 @@ const Contact = () => {
         <div className="flex flex-col space-y-[8px] pt-[32px] pb-[64px] md:pt-[0px] md:pb-[0px]">
           <div className="flex space-x-1">
             <p className="p-regular text-theme-gray">EMAIL:</p>
-            <p className="p-medium text-theme-white">hello@seibo.com</p>
+            <p className="p-regular text-theme-white">HELLO@SEIBO.COM</p>
           </div>
           <div className="flex space-x-1">
             <p className="p-regular text-theme-gray">WHATSAPP:</p>
-            <p className="p-medium text-theme-white">+62 82147492501</p>
+            <p className="p-regular text-theme-white">+62 82147492501</p>
           </div>
         </div>
       </div>

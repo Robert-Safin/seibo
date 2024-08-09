@@ -9,7 +9,7 @@ const LargeHero = () => {
           src={"/assets/hero/purple.mp4"}
           width={1000}
           height={1000}
-          className="h-[166px] object-cover w-full"
+          className="h-[20vh] object-cover w-full"
         />
         <div className="flex space-x-3">
           <video
@@ -19,7 +19,7 @@ const LargeHero = () => {
             src={"/assets/hero/white.mp4"}
             width={1000}
             height={1000}
-            className="h-[166px] object-cover w-2/3"
+            className="h-[20vh] object-cover w-2/3"
           />
           <video
             autoPlay
@@ -28,7 +28,7 @@ const LargeHero = () => {
             src={"/assets/hero/green.mp4"}
             width={1000}
             height={1000}
-            className="h-[166px] object-cover w-1/3"
+            className="h-[20vh] object-cover w-1/3"
           />
         </div>
         <video
@@ -38,7 +38,7 @@ const LargeHero = () => {
           src={"/assets/hero/red.mp4"}
           width={1000}
           height={1000}
-          className="h-[166px] object-cover w-full"
+          className="h-[20vh] object-cover w-full"
         />
         <div className="flex space-x-3">
           <div className="flex flex-col justify-between">
