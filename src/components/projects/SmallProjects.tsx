@@ -87,6 +87,7 @@ const Card: FC<Props> = (props) => {
           target="_blank"
         >
           <motion.video
+            playsInline
             autoPlay
             loop
             src={props.videoPath}

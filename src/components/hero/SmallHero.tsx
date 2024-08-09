@@ -17,6 +17,7 @@ const SmallHero = () => {
         </h4>
         <div className="flex flex-col space-y-3">
           <video
+            playsInline
             autoPlay
             muted
             loop
@@ -26,6 +27,7 @@ const SmallHero = () => {
             className="h-[48px] object-cover"
           />
           <video
+            playsInline
             autoPlay
             muted
             loop
@@ -35,6 +37,7 @@ const SmallHero = () => {
             className="h-[117px] object-cover"
           />
           <video
+            playsInline
             autoPlay
             muted
             loop
@@ -44,6 +47,7 @@ const SmallHero = () => {
             className="h-[61px] object-cover"
           />
           <video
+            playsInline
             autoPlay
             muted
             loop
