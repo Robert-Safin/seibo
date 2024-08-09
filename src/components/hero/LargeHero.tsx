@@ -1,3 +1,4 @@
+"use client";
 const LargeHero = () => {
   return (
     <div className="max-w-[1920px] mx-auto x-pad">
