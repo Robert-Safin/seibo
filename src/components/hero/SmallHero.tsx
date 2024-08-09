@@ -1,6 +1,11 @@
-import { Suspense } from "react";
+"use client";
+
+import { useState } from "react";
 
 const SmallHero = () => {
+  const [loaded, setLoaded] = useState([false, false, false, false]);
+  console.log(loaded);
+
   return (
     <>
       <div className="pt-[130px] x-pad">
@@ -27,6 +32,10 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[48px] object-cover"
+            onLoadedData={() => {
+              setLoaded([true, loaded[1], loaded[2], loaded[3]]);
+              console.log("loaded 1");
+            }}
           />
 
           <video
@@ -38,6 +47,10 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[117px] object-cover"
+            onLoadedData={() => {
+              setLoaded([loaded[0], true, loaded[2], loaded[3]]);
+              console.log("loaded 2");
+            }}
           />
           <video
             playsInline
@@ -48,6 +61,10 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[61px] object-cover"
+            onLoadedData={() => {
+              setLoaded([loaded[0], loaded[1], true, loaded[3]]);
+              console.log("loaded 3");
+            }}
           />
           <video
             playsInline
@@ -58,9 +75,19 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[84px] object-cover"
+            onLoadedData={() => {
+              setLoaded([loaded[0], loaded[1], loaded[2], true]);
+              console.log("loaded 4");
+            }}
           />
         </div>
       </div>
+
+      {loaded.some((load) => load == false) && (
+        <div className="bg-black pt-[130px] x-pad w-screen h-screen absolute top-0 border-white">
+          <p className="text-white text-4xl"> LOADING ...</p>
+        </div>
+      )}
     </>
   );
 };
