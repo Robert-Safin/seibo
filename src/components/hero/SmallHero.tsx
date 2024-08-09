@@ -12,10 +12,6 @@ const SmallHero = () => {
     if (loadStatus.current.every((status) => status === true)) {
       setLoaded(true);
       console.log("All videos loaded");
-      document.getElementsByClassName("vid")[0].play();
-      document.getElementsByClassName("vid")[1].play();
-      document.getElementsByClassName("vid")[2].play();
-      document.getElementsByClassName("vid")[3].play();
     }
   };
 
@@ -44,8 +40,11 @@ const SmallHero = () => {
             src={"/assets/hero/purple.mp4"}
             width={1000}
             height={1000}
-            className="h-[48px] object-cover vid"
-            onLoadedData={() => handleLoadedData(0)}
+            className="h-[48px] object-cover"
+            onLoadedData={(e) => {
+              handleLoadedData(0);
+              e.currentTarget.play();
+            }}
           />
 
           <video
@@ -56,8 +55,11 @@ const SmallHero = () => {
             src={"/assets/hero/white.mp4"}
             width={1000}
             height={1000}
-            className="h-[117px] object-cover vid"
-            onLoadedData={() => handleLoadedData(1)}
+            className="h-[117px] object-cover"
+            onLoadedData={(e) => {
+              handleLoadedData(1);
+              e.currentTarget.play();
+            }}
           />
           <video
             playsInline
@@ -67,8 +69,11 @@ const SmallHero = () => {
             src={"/assets/hero/red.mp4"}
             width={1000}
             height={1000}
-            className="h-[61px] object-cover vid"
-            onLoadedData={() => handleLoadedData(2)}
+            className="h-[61px] object-cover"
+            onLoadedData={(e) => {
+              handleLoadedData(2);
+              e.currentTarget.play();
+            }}
           />
           <video
             playsInline
@@ -78,8 +83,11 @@ const SmallHero = () => {
             src={"/assets/hero/orange.mp4"}
             width={1000}
             height={1000}
-            className="h-[84px] object-cover vid"
-            onLoadedData={() => handleLoadedData(3)}
+            className="h-[84px] object-cover"
+            onLoadedData={(e) => {
+              handleLoadedData(3);
+              e.currentTarget.play();
+            }}
           />
         </div>
       </div>
