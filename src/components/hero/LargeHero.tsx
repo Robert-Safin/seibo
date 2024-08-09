@@ -1,4 +1,3 @@
-"use client";
 const LargeHero = () => {
   return (
     <div className="max-w-[1920px] mx-auto x-pad">
@@ -11,7 +10,6 @@ const LargeHero = () => {
           width={1000}
           height={1000}
           className="h-[20vh] object-cover w-full"
-          onLoad={(e) => e.currentTarget.play()}
         />
         <div className="flex space-x-3">
           <video
@@ -22,7 +20,6 @@ const LargeHero = () => {
             width={1000}
             height={1000}
             className="h-[20vh] object-cover w-2/3"
-            onLoad={(e) => e.currentTarget.play()}
           />
           <video
             autoPlay
@@ -32,7 +29,6 @@ const LargeHero = () => {
             width={1000}
             height={1000}
             className="h-[20vh] object-cover w-1/3"
-            onLoad={(e) => e.currentTarget.play()}
           />
         </div>
         <video
@@ -43,7 +39,6 @@ const LargeHero = () => {
           width={1000}
           height={1000}
           className="h-[20vh] object-cover w-full"
-          onLoad={(e) => e.currentTarget.play()}
         />
         <div className="flex space-x-3">
           <div className="flex flex-col justify-between">

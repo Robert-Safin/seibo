@@ -1,4 +1,3 @@
-"use client";
 const SmallHero = () => {
   return (
     <>
@@ -25,7 +24,6 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[48px] object-cover"
-            onLoad={(e) => e.currentTarget.play()}
           />
           <video
             autoPlay
@@ -35,7 +33,6 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[117px] object-cover"
-            onLoad={(e) => e.currentTarget.play()}
           />
           <video
             autoPlay
@@ -45,7 +42,6 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[61px] object-cover"
-            onLoad={(e) => e.currentTarget.play()}
           />
           <video
             autoPlay
@@ -55,7 +51,6 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[84px] object-cover"
-            onLoad={(e) => e.currentTarget.play()}
           />
         </div>
       </div>
