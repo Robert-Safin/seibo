@@ -1,16 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const SmallHero = () => {
-  const [loaded1, setLoaded1] = useState(false);
-  const [loaded2, setLoaded2] = useState(false);
-  const [loaded3, setLoaded3] = useState(false);
-  const [loaded4, setLoaded4] = useState(false);
-  console.log("loaded1", loaded1);
-  console.log("loaded2", loaded2);
-  console.log("loaded3", loaded3);
-  console.log("loaded4", loaded4);
+  const [loaded, setLoaded] = useState(false);
+  const loadStatus = useRef([false, false, false, false]);
+
+  const handleLoadedData = (index: number) => {
+    loadStatus.current[index] = true;
+    if (loadStatus.current.every((status) => status === true)) {
+      setLoaded(true);
+      console.log("All videos loaded");
+    }
+  };
 
   return (
     <>
@@ -38,9 +40,7 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[48px] object-cover"
-            onLoadedData={() => {
-              setLoaded1(true);
-            }}
+            onLoadedData={() => handleLoadedData(0)}
           />
 
           <video
@@ -52,9 +52,7 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[117px] object-cover"
-            onLoadedData={() => {
-              setLoaded2(true);
-            }}
+            onLoadedData={() => handleLoadedData(1)}
           />
           <video
             playsInline
@@ -65,9 +63,7 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[61px] object-cover"
-            onLoadedData={() => {
-              setLoaded3(true);
-            }}
+            onLoadedData={() => handleLoadedData(2)}
           />
           <video
             playsInline
@@ -78,21 +74,16 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[84px] object-cover"
-            onLoadedData={() => {
-              setLoaded4(true);
-            }}
+            onLoadedData={() => handleLoadedData(3)}
           />
         </div>
       </div>
 
-      {loaded1 === true &&
-        loaded2 === true &&
-        loaded3 === true &&
-        loaded4 === true && (
-          <div className="bg-black pt-[130px] x-pad w-screen h-screen absolute top-0 border-white">
-            <p className="text-white text-4xl"> LOADING ...</p>
-          </div>
-        )}
+      {!loaded && (
+        <div className="bg-black pt-[130px] x-pad w-screen h-screen absolute top-0 border-white">
+          <p className="text-white text-4xl"> LOADING ...</p>
+        </div>
+      )}
     </>
   );
 };
