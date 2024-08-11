@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 
 const SmallHero = () => {
   // const [load1, setLoad1] = useState(false);
@@ -44,9 +41,9 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[48px] object-cover"
-            onLoadedMetadata={(e) => {
-              //setLoad1(true);
-            }}
+            // onLoadedMetadata={(e) => {
+            //   //setLoad1(true);
+            // }}
           />
 
           <video
@@ -58,9 +55,9 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[117px] object-cover"
-            onLoadedMetadata={(e) => {
-              //setLoad2(true);
-            }}
+            // onLoadedMetadata={(e) => {
+            //   //setLoad2(true);
+            // }}
           />
           <video
             playsInline
@@ -71,9 +68,9 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[61px] object-cover"
-            onLoadedMetadata={(e) => {
-              //setLoad3(true);
-            }}
+            // onLoadedMetadata={(e) => {
+            //   //setLoad3(true);
+            // }}
           />
           <video
             playsInline
@@ -84,9 +81,9 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[84px] object-cover"
-            onLoadedMetadata={(e) => {
-              //setLoad4(true);
-            }}
+            // onLoadedMetadata={(e) => {
+            //   //setLoad4(true);
+            // }}
           />
         </div>
       </div>

@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 
 const LargeHero = () => {
   // const [load1, setLoad1] = useState(false);
@@ -29,9 +26,9 @@ const LargeHero = () => {
             width={1000}
             height={1000}
             className="h-[20vh] object-cover w-full"
-            onLoadedMetadata={(e) => {
-              //setLoad1(true);
-            }}
+            // onLoadedMetadata={(e) => {
+            //   //setLoad1(true);
+            // }}
           />
           <div className="flex space-x-3">
             <video
@@ -42,9 +39,9 @@ const LargeHero = () => {
               width={1000}
               height={1000}
               className="h-[20vh] object-cover w-2/3"
-              onLoadedMetadata={(e) => {
-                //setLoad2(true);
-              }}
+              // onLoadedMetadata={(e) => {
+              //   //setLoad2(true);
+              // }}
             />
             <video
               autoPlay
@@ -54,9 +51,9 @@ const LargeHero = () => {
               width={1000}
               height={1000}
               className="h-[20vh] object-cover w-1/3"
-              onLoadedMetadata={(e) => {
-                //setLoad3(true);
-              }}
+              // onLoadedMetadata={(e) => {
+              //   //setLoad3(true);
+              // }}
             />
           </div>
           <video
@@ -67,9 +64,9 @@ const LargeHero = () => {
             width={1000}
             height={1000}
             className="h-[20vh] object-cover w-full"
-            onLoadedMetadata={(e) => {
-              //setLoad4(true);
-            }}
+            // onLoadedMetadata={(e) => {
+            //   //setLoad4(true);
+            // }}
           />
           <div className="flex space-x-3">
             <div className="flex flex-col justify-between">
@@ -91,9 +88,9 @@ const LargeHero = () => {
               width={1000}
               height={1000}
               className="h-[224px] object-cover w-full"
-              onLoadedMetadata={(e) => {
-                //setLoad5(true);
-              }}
+              // onLoadedMetadata={(e) => {
+              //   //setLoad5(true);
+              // }}
             />
           </div>
         </div>
