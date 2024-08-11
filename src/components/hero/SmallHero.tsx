@@ -6,12 +6,11 @@ const SmallHero = () => {
           <p className="text-white text-4xl"> LOADING ...</p>
         </div>
       )} */}
-      <div className="pt-[130px] x-pad">
+      <div className="pt-[100px] x-pad">
         <h3
           className="text-theme-white text-center
         font-geist text-[16px] leading-[24px] tracking-[-1.2px]
-        w-[286px] mx-auto
-        "
+        w-[286px] mx-auto"
         >
           We specialize in carefully handcrafted custom web services.{" "}
         </h3>
