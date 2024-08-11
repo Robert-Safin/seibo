@@ -15,14 +15,11 @@ const SmallHero = () => {
 
   return (
     <>
-      {load1 === true &&
-        load2 === true &&
-        load3 === true &&
-        load4 === true && (
-          <div className="bg-black pt-[130px] x-pad w-screen h-screen fixed z-50 top-0 border-white">
-            <p className="text-white text-4xl"> LOADING ...</p>
-          </div>
-        )}
+      {load1 === true && load2 === true && load3 === true && load4 === true && (
+        <div className="bg-black pt-[130px] x-pad w-screen h-screen fixed z-50 top-0 border-white">
+          <p className="text-white text-4xl"> LOADING ...</p>
+        </div>
+      )}
       <div className="pt-[130px] x-pad">
         <h3
           className="text-theme-white text-center
@@ -47,7 +44,7 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[48px] object-cover"
-            onCanPlayThrough={(e) => {
+            onLoadedData={(e) => {
               setLoad1(true);
             }}
           />
@@ -61,7 +58,7 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[117px] object-cover"
-            onCanPlayThrough={(e) => {
+            onLoadedData={(e) => {
               setLoad2(true);
             }}
           />
@@ -74,7 +71,7 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[61px] object-cover"
-            onCanPlayThrough={(e) => {
+            onLoadedData={(e) => {
               setLoad3(true);
             }}
           />
@@ -87,7 +84,7 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[84px] object-cover"
-            onCanPlayThrough={(e) => {
+            onLoadedData={(e) => {
               setLoad4(true);
             }}
           />
