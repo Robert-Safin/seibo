@@ -19,7 +19,7 @@ const SmallHero = () => {
         load2 === false &&
         load3 === false &&
         load4 === false && (
-          <div className="bg-black pt-[130px] x-pad w-screen h-screen absolute z-50 top-0 border-white">
+          <div className="bg-black pt-[130px] x-pad w-screen h-screen fixed z-50 top-0 border-white">
             <p className="text-white text-4xl"> LOADING ...</p>
           </div>
         )}
