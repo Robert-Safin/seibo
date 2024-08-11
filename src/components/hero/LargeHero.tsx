@@ -10,11 +10,11 @@ const LargeHero = () => {
   const [load5, setLoad5] = useState(false);
   return (
     <>
-      {load1 === false &&
-        load2 === false &&
-        load3 === false &&
-        load4 === false &&
-        load5 === false && (
+      {load1 === true &&
+        load2 === true &&
+        load3 === true &&
+        load4 === true &&
+        load5 === true && (
           <div className="bg-black pt-[130px] x-pad w-screen h-screen  z-50 top-0 border-white fixed">
             <p className="text-white text-4xl"> LOADING ...</p>
           </div>
