@@ -29,7 +29,7 @@ const LargeHero = () => {
             width={1000}
             height={1000}
             className="h-[20vh] object-cover w-full"
-            onLoadedData={(e) => {
+            onLoadedMetadata={(e) => {
               setLoad1(true);
             }}
           />
@@ -42,7 +42,7 @@ const LargeHero = () => {
               width={1000}
               height={1000}
               className="h-[20vh] object-cover w-2/3"
-              onLoadedData={(e) => {
+              onLoadedMetadata={(e) => {
                 setLoad2(true);
               }}
             />
@@ -54,7 +54,7 @@ const LargeHero = () => {
               width={1000}
               height={1000}
               className="h-[20vh] object-cover w-1/3"
-              onLoadedData={(e) => {
+              onLoadedMetadata={(e) => {
                 setLoad3(true);
               }}
             />
@@ -67,7 +67,7 @@ const LargeHero = () => {
             width={1000}
             height={1000}
             className="h-[20vh] object-cover w-full"
-            onLoadedData={(e) => {
+            onLoadedMetadata={(e) => {
               setLoad4(true);
             }}
           />
@@ -91,7 +91,7 @@ const LargeHero = () => {
               width={1000}
               height={1000}
               className="h-[224px] object-cover w-full"
-              onLoadedData={(e) => {
+              onLoadedMetadata={(e) => {
                 setLoad5(true);
               }}
             />
