@@ -1,9 +1,9 @@
 const SmallServices = () => {
   return (
     <div className="x-pad pt-[92px] pb-[72px]">
-      <div className="md:flex md:items-end md:space-x-4 mb-[96px]">
-        <h1 className="D1-Fashion-M text-theme-white">Our</h1>
-        <div className="flex items-end space-x-2 ">
+      <div className="md:flex md:items-end mb-[96px] md:space-x-4">
+        <h1 className="D1-Fashion-M text-theme-white">Our{" "}</h1>
+        <div className="flex items-end space-x-4">
           <h1 className="D1-M text-theme-white">Services</h1>
           <p className="text-theme-gray sh2-medium">[OS_04]</p>
         </div>

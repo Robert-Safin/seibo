@@ -1,22 +1,28 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 const SmallHero = () => {
-  const [loaded, setLoaded] = useState(false);
-  const loadStatus = useRef([false, false, false, false]);
+  const [load1, setLoad1] = useState(false);
+  const [load2, setLoad2] = useState(false);
+  const [load3, setLoad3] = useState(false);
+  const [load4, setLoad4] = useState(false);
 
-  const handleLoadedData = (index: number) => {
-    console.log("loaded #", index);
-    loadStatus.current[index] = true;
-    if (loadStatus.current.every((status) => status === true)) {
-      setLoaded(true);
-      console.log("All videos loaded");
-    }
-  };
+  // console.log("load1", load1);
+  // console.log("load2", load2);
+  // console.log("load3", load3);
+  // console.log("load4", load4);
 
   return (
     <>
+      {load1 === false &&
+        load2 === false &&
+        load3 === false &&
+        load4 === false && (
+          <div className="bg-black pt-[130px] x-pad w-screen h-screen absolute z-50 top-0 border-white">
+            <p className="text-white text-4xl"> LOADING ...</p>
+          </div>
+        )}
       <div className="pt-[130px] x-pad">
         <h3
           className="text-theme-white text-center
@@ -42,8 +48,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[48px] object-cover"
             onLoadedData={(e) => {
-              handleLoadedData(0);
-              e.currentTarget.play();
+              setLoad1(true);
             }}
           />
 
@@ -57,8 +62,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[117px] object-cover"
             onLoadedData={(e) => {
-              handleLoadedData(1);
-              e.currentTarget.play();
+              setLoad2(true);
             }}
           />
           <video
@@ -71,8 +75,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[61px] object-cover"
             onLoadedData={(e) => {
-              handleLoadedData(2);
-              e.currentTarget.play();
+              setLoad3(true);
             }}
           />
           <video
@@ -85,18 +88,11 @@ const SmallHero = () => {
             height={1000}
             className="h-[84px] object-cover"
             onLoadedData={(e) => {
-              handleLoadedData(3);
-              e.currentTarget.play();
+              setLoad4(true);
             }}
           />
         </div>
       </div>
-
-      {!loaded && (
-        <div className="bg-black pt-[130px] x-pad w-screen h-screen absolute top-0 border-white">
-          <p className="text-white text-4xl"> LOADING ...</p>
-        </div>
-      )}
     </>
   );
 };

@@ -5,9 +5,9 @@ import { FC } from "react";
 const LargeProjects = () => {
   return (
     <div className="x-pad max-w-[1920px] mx-auto pt-[192px]">
-      <p className="space-x-[20px] pb-[146px]">
-        <span className="D1-Fashion-L text-theme-white">Featured</span>
-        <span className="D1-L text-theme-white">Projects</span>
+      <p className="pb-[146px]">
+        <span className="D1-Fashion-L text-theme-white">Featured{" "}</span>
+        <span className="D1-L text-theme-white">Projects{" "}</span>
         <span className="text-theme-gray sh2-medium">[FP_04]</span>
       </p>
       <div className="grid grid-cols-2 gap-[6px]">
@@ -65,7 +65,7 @@ type Props = {
 
 const Card: FC<Props> = (props) => {
   return (
-    <div className="relative w-full h-[50vw] z-0 group">
+    <div className="relative w-full h-[50vw] z-0 group max-h-[921px]">
       <Image
         src={props.imagePath}
         width={1000}

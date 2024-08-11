@@ -3,7 +3,7 @@ import Image from "next/image";
 const SmallNav = () => {
   return (
     <>
-      <nav className="flex w-screen justify-between x-pad pt-[24px]">
+      <nav className="flex w-screen justify-between x-pad pt-[16px]">
         <Image
           src={"/assets/logo/logo.svg"}
           width={500}

@@ -23,7 +23,7 @@ type Props = {
 
 const RootLayout: FC<Props> = (props) => {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-theme-black">
       <body
         className={`
         ${eb_garamond.variable}

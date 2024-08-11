@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 .x-pad {
-  @apply px-[18px] md:px-[24px] lg:px-[36px];
+  @apply px-[18px] md:px-[24px] lg:px-[36px] xl:px-[48px];
 }
 
 .aspect-height {
-  height: calc(33vw * 1.49);
+  height: calc(33vw * 1.408);
 }

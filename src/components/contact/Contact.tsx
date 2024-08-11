@@ -13,21 +13,21 @@ const Contact = () => {
 
       <div className="md:hidden">
         <h2 className="D1-M text-theme-white my-[26px]">
-          Get in
+          Get in{" "}
           <span className="D1-Fashion-M text-theme-white">touch</span>
         </h2>
       </div>
 
       <div className="hidden md:block text-center xl:hidden">
         <h2 className="D0-M  text-theme-white my-[8px]">
-          Get in
+          Get in{" "}
           <span className="D0-Fashion-M  text-theme-white">touch</span>
         </h2>
       </div>
 
       <div className="hidden xl:block text-center">
         <h2 className="DO-L text-theme-white my-[8px]">
-          Get in
+          Get in{" "}
           <span className="DO-fashion  text-theme-white">touch</span>
         </h2>
       </div>

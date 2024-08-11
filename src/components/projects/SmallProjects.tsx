@@ -8,8 +8,8 @@ const SmallProjects = () => {
     <div className="x-pad pt-[128px]">
       <div className="md:flex md:items-end pb-[72px] md:space-x-4">
         <h3 className="D1-Fashion-M text-theme-white ">Featured</h3>
-        <div className=" flex items-end space-x-2">
-          <h3 className="D1-M text-theme-white">Projects</h3>
+        <div className="flex items-end space-x-4">
+          <h3 className="D1-M text-theme-white">Projects{" "}</h3>
           <p className="sh2-medium text-theme-gray">[FP_04]</p>
         </div>
       </div>
