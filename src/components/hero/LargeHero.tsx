@@ -7,12 +7,14 @@ const LargeHero = () => {
   const [load2, setLoad2] = useState(false);
   const [load3, setLoad3] = useState(false);
   const [load4, setLoad4] = useState(false);
+  const [load5, setLoad5] = useState(false);
   return (
     <>
       {load1 === false &&
         load2 === false &&
         load3 === false &&
-        load4 === false && (
+        load4 === false &&
+        load5 === false && (
           <div className="bg-black pt-[130px] x-pad w-screen h-screen  z-50 top-0 border-white fixed">
             <p className="text-white text-4xl"> LOADING ...</p>
           </div>
@@ -89,6 +91,9 @@ const LargeHero = () => {
               width={1000}
               height={1000}
               className="h-[224px] object-cover w-full"
+              onCanPlayThrough={(e) => {
+                setLoad5(true);
+              }}
             />
           </div>
         </div>
