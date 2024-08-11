@@ -26,7 +26,7 @@ const LargeHero = () => {
             height={1000}
             className="h-[20vh] object-cover w-full"
           >
-            <source src="/assets/hero/purple.mp4" type="video/mp4" />
+            <source src="/assets/hero/purple2.mp4" type="video/mp4" />
           </video>
           <div className="flex space-x-3">
             <video
@@ -38,7 +38,7 @@ const LargeHero = () => {
               height={1000}
               className="h-[20vh] object-cover w-2/3"
             >
-              <source src="/assets/hero/white.mp4" type="video/mp4" />
+              <source src="/assets/hero/white2.mp4" type="video/mp4" />
             </video>
             <video
               autoPlay
@@ -49,7 +49,7 @@ const LargeHero = () => {
               height={1000}
               className="h-[20vh] object-cover w-1/3"
             >
-              <source src="/assets/hero/green.mp4" type="video/mp4" />
+              <source src="/assets/hero/green2.mp4" type="video/mp4" />
             </video>
           </div>
           <video
@@ -61,7 +61,7 @@ const LargeHero = () => {
             height={1000}
             className="h-[20vh] object-cover w-full"
           >
-            <source src="/assets/hero/red.mp4" type="video/mp4" />
+            <source src="/assets/hero/red2.mp4" type="video/mp4" />
           </video>
           <div className="flex space-x-3">
             <div className="flex flex-col justify-between">
@@ -84,7 +84,7 @@ const LargeHero = () => {
               height={1000}
               className="h-[224px] object-cover w-full"
             >
-              <source src="/assets/hero/orange.mp4" type="video/mp4" />
+              <source src="/assets/hero/orange2.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
