@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 const SmallHero = () => {
-  const [load1, setLoad1] = useState(false);
-  const [load2, setLoad2] = useState(false);
-  const [load3, setLoad3] = useState(false);
-  const [load4, setLoad4] = useState(false);
+  // const [load1, setLoad1] = useState(false);
+  // const [load2, setLoad2] = useState(false);
+  // const [load3, setLoad3] = useState(false);
+  // const [load4, setLoad4] = useState(false);
 
   // console.log("load1", load1);
   // console.log("load2", load2);
@@ -15,11 +15,11 @@ const SmallHero = () => {
 
   return (
     <>
-      {load1 === true && load2 === true && load3 === true && load4 === true && (
+      {/* {load1 === true && load2 === true && load3 === true && load4 === true && (
         <div className="bg-black pt-[130px] x-pad w-screen h-screen fixed z-50 top-0 border-white">
           <p className="text-white text-4xl"> LOADING ...</p>
         </div>
-      )}
+      )} */}
       <div className="pt-[130px] x-pad">
         <h3
           className="text-theme-white text-center
@@ -45,7 +45,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[48px] object-cover"
             onLoadedMetadata={(e) => {
-              setLoad1(true);
+              //setLoad1(true);
             }}
           />
 
@@ -59,7 +59,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[117px] object-cover"
             onLoadedMetadata={(e) => {
-              setLoad2(true);
+              //setLoad2(true);
             }}
           />
           <video
@@ -72,7 +72,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[61px] object-cover"
             onLoadedMetadata={(e) => {
-              setLoad3(true);
+              //setLoad3(true);
             }}
           />
           <video
@@ -85,7 +85,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[84px] object-cover"
             onLoadedMetadata={(e) => {
-              setLoad4(true);
+              //setLoad4(true);
             }}
           />
         </div>
