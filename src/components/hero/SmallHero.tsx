@@ -47,7 +47,7 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[48px] object-cover"
-            onLoadedData={(e) => {
+            onCanPlayThrough={(e) => {
               setLoad1(true);
             }}
           />
@@ -61,7 +61,7 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[117px] object-cover"
-            onLoadedData={(e) => {
+            onCanPlayThrough={(e) => {
               setLoad2(true);
             }}
           />
@@ -74,7 +74,7 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[61px] object-cover"
-            onLoadedData={(e) => {
+            onCanPlayThrough={(e) => {
               setLoad3(true);
             }}
           />
@@ -87,7 +87,7 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[84px] object-cover"
-            onLoadedData={(e) => {
+            onCanPlayThrough={(e) => {
               setLoad4(true);
             }}
           />
