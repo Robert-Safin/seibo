@@ -1,15 +1,4 @@
-
 const SmallHero = () => {
-  // const [load1, setLoad1] = useState(false);
-  // const [load2, setLoad2] = useState(false);
-  // const [load3, setLoad3] = useState(false);
-  // const [load4, setLoad4] = useState(false);
-
-  // console.log("load1", load1);
-  // console.log("load2", load2);
-  // console.log("load3", load3);
-  // console.log("load4", load4);
-
   return (
     <>
       {/* {load1 === true && load2 === true && load3 === true && load4 === true && (
@@ -41,10 +30,9 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[48px] object-cover"
-            // onLoadedMetadata={(e) => {
-            //   //setLoad1(true);
-            // }}
-          />
+          >
+            <source src="/assets/hero/purple.mp4" type="video/mp4" />
+          </video>
 
           <video
             playsInline
@@ -55,10 +43,9 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[117px] object-cover"
-            // onLoadedMetadata={(e) => {
-            //   //setLoad2(true);
-            // }}
-          />
+          >
+            <source src="/assets/hero/white.mp4" type="video/mp4" />
+          </video>
           <video
             playsInline
             autoPlay
@@ -68,10 +55,9 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[61px] object-cover"
-            // onLoadedMetadata={(e) => {
-            //   //setLoad3(true);
-            // }}
-          />
+          >
+            <source src="/assets/hero/red.mp4" type="video/mp4" />
+          </video>
           <video
             playsInline
             autoPlay
@@ -81,10 +67,9 @@ const SmallHero = () => {
             width={1000}
             height={1000}
             className="h-[84px] object-cover"
-            // onLoadedMetadata={(e) => {
-            //   //setLoad4(true);
-            // }}
-          />
+          >
+            <source src="/assets/hero/orange.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </>

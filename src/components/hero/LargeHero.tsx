@@ -1,4 +1,3 @@
-
 const LargeHero = () => {
   // const [load1, setLoad1] = useState(false);
   // const [load2, setLoad2] = useState(false);
@@ -22,52 +21,48 @@ const LargeHero = () => {
             autoPlay
             muted
             loop
-            src={"/assets/hero/purple.mp4"}
+            // src={"/assets/hero/purple.mp4"}
             width={1000}
             height={1000}
             className="h-[20vh] object-cover w-full"
-            // onLoadedMetadata={(e) => {
-            //   //setLoad1(true);
-            // }}
-          />
+          >
+            <source src="/assets/hero/purple.mp4" type="video/mp4" />
+          </video>
           <div className="flex space-x-3">
             <video
               autoPlay
               muted
               loop
-              src={"/assets/hero/white.mp4"}
+              // src={"/assets/hero/white.mp4"}
               width={1000}
               height={1000}
               className="h-[20vh] object-cover w-2/3"
-              // onLoadedMetadata={(e) => {
-              //   //setLoad2(true);
-              // }}
-            />
+            >
+              <source src="/assets/hero/white.mp4" type="video/mp4" />
+            </video>
             <video
               autoPlay
               muted
               loop
-              src={"/assets/hero/green.mp4"}
+              // src={"/assets/hero/green.mp4"}
               width={1000}
               height={1000}
               className="h-[20vh] object-cover w-1/3"
-              // onLoadedMetadata={(e) => {
-              //   //setLoad3(true);
-              // }}
-            />
+            >
+              <source src="/assets/hero/green.mp4" type="video/mp4" />
+            </video>
           </div>
           <video
             autoPlay
             muted
             loop
-            src={"/assets/hero/red.mp4"}
+            // src={"/assets/hero/red.mp4"}
             width={1000}
             height={1000}
             className="h-[20vh] object-cover w-full"
-            // onLoadedMetadata={(e) => {
-            //   //setLoad4(true);
-            // }}
-          />
+          >
+            <source src="/assets/hero/red.mp4" type="video/mp4" />
+          </video>
           <div className="flex space-x-3">
             <div className="flex flex-col justify-between">
               <h4 className="text-theme-white sh1-regular w-[395px] lg:w-[557px] xl:w-[660px]">
@@ -84,14 +79,13 @@ const LargeHero = () => {
               autoPlay
               muted
               loop
-              src={"/assets/hero/orange.mp4"}
+              // src={"/assets/hero/orange.mp4"}
               width={1000}
               height={1000}
               className="h-[224px] object-cover w-full"
-              // onLoadedMetadata={(e) => {
-              //   //setLoad5(true);
-              // }}
-            />
+            >
+              <source src="/assets/hero/orange.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
