@@ -9,7 +9,7 @@ const SmallProjects = () => {
       <div className="md:flex md:items-end pb-[72px] md:space-x-4">
         <h3 className="D1-Fashion-M text-theme-white ">Featured</h3>
         <div className="flex items-end space-x-4">
-          <h3 className="D1-M text-theme-white">Projects{" "}</h3>
+          <h3 className="D1-M text-theme-white">Projects </h3>
           <p className="sh2-medium text-theme-gray">[FP_04]</p>
         </div>
       </div>
@@ -90,13 +90,15 @@ const Card: FC<Props> = (props) => {
             playsInline
             autoPlay
             loop
-            src={props.videoPath}
+            // src={props.videoPath}
             muted
             className="object-cover w-[90%]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-          />
+          >
+            <source src={props.videoPath} type="video/mp4" />
+          </motion.video>
         </Link>
       </div>
 

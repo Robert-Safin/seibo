@@ -6,8 +6,8 @@ const LargeProjects = () => {
   return (
     <div className="x-pad max-w-[1920px] mx-auto pt-[192px]">
       <p className="pb-[146px]">
-        <span className="D1-Fashion-L text-theme-white">Featured{" "}</span>
-        <span className="D1-L text-theme-white">Projects{" "}</span>
+        <span className="D1-Fashion-L text-theme-white">Featured </span>
+        <span className="D1-L text-theme-white">Projects </span>
         <span className="text-theme-gray sh2-medium">[FP_04]</span>
       </p>
       <div className="grid grid-cols-2 gap-[6px]">
@@ -85,10 +85,12 @@ const Card: FC<Props> = (props) => {
           <video
             autoPlay
             loop
-            src={props.videoPath}
+            // src={props.videoPath}
             muted
             className="object-cover w-[90%] opacity-0 group-hover:opacity-100 transition-all duration-700"
-          />
+          >
+            <source src={props.videoPath} type="video/mp4" />
+          </video>
         </Link>
       </div>
 
