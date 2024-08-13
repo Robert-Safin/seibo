@@ -4,14 +4,14 @@ import Image from "next/image";
 const LargeHero = () => {
   return (
     <>
-      <div className="max-w-[1920px] mx-auto x-pad">
+      <div className="max-w-[1920px] mx-auto x-pad pb-[40px]">
         <div className="flex flex-col space-y-3 pt-[120px]">
           <div className="h-[20vh] w-full relative z-0">
             <Image
               priority
               src="/assets/hero/purple-f.png"
               width={1000}
-              height={1000}
+              height={300}
               alt="fallback"
               className="w-full h-full absolute top-0 -z-10 object-cover"
             />
@@ -21,7 +21,7 @@ const LargeHero = () => {
               muted
               loop
               width={1000}
-              height={1000}
+              height={300}
               className="h-[20vh] object-cover w-full z-10"
             >
               <source src="/assets/hero/purple-fmt.mp4" type="video/mp4" />
@@ -34,7 +34,7 @@ const LargeHero = () => {
                 priority
                 src="/assets/hero/white-f.png"
                 width={1000}
-                height={1000}
+                height={300}
                 alt="fallback"
                 className="w-full h-full absolute top-0 -z-10 object-cover"
               />
@@ -44,7 +44,7 @@ const LargeHero = () => {
                 muted
                 loop
                 width={1000}
-                height={1000}
+                height={300}
                 className="h-[20vh] object-cover w-full z-10"
               >
                 <source src="/assets/hero/white-fmt.mp4" type="video/mp4" />
@@ -55,7 +55,7 @@ const LargeHero = () => {
                 priority
                 src="/assets/hero/green-f.png"
                 width={1000}
-                height={1000}
+                height={300}
                 alt="fallback"
                 className="w-full h-full absolute top-0 -z-10 object-cover"
               />
@@ -65,7 +65,7 @@ const LargeHero = () => {
                 muted
                 loop
                 width={1000}
-                height={1000}
+                height={300}
                 className="h-[20vh] object-cover w-full z-10"
               >
                 <source src="/assets/hero/green-fmt.mp4" type="video/mp4" />
@@ -77,7 +77,7 @@ const LargeHero = () => {
               priority
               src="/assets/hero/red-f.png"
               width={1000}
-              height={1000}
+              height={300}
               alt="fallback"
               className="w-full h-full absolute top-0 -z-10 object-cover"
             />
@@ -87,7 +87,7 @@ const LargeHero = () => {
               muted
               loop
               width={1000}
-              height={1000}
+              height={300}
               className="h-[20vh] object-cover w-full z-10"
             >
               <source src="/assets/hero/red-fmt.mp4" type="video/mp4" />
@@ -110,7 +110,7 @@ const LargeHero = () => {
                 priority
                 src="/assets/hero/orange-f.png"
                 width={1000}
-                height={1000}
+                height={300}
                 alt="fallback"
                 className="w-full h-full absolute top-0 -z-10 object-cover"
               />
@@ -120,7 +120,7 @@ const LargeHero = () => {
                 muted
                 loop
                 width={1000}
-                height={1000}
+                height={300}
                 className="h-[224px] object-cover w-full z-10"
               >
                 <source src="/assets/hero/orange-fmt.mp4" type="video/mp4" />

@@ -72,34 +72,36 @@ const Card: FC<Props> = (props) => {
     <div className="relative w-full h-[90vw] z-0 md:w-full md:h-[50vw]">
       <Image
         src={props.imagePath}
-        width={1000}
-        height={1000}
+        width={300}
+        height={300}
         alt={props.title}
-        className="absolute -z-10 h-full object-cover"
+        className="absolute -z-10 h-full object-cover w-full"
       />
-      <div
+      <div className="absolute top-0 w-full h-full -z-10 bg-theme-black opacity-25"/>
+
+      <motion.div
         className={`absolute z-10 w-[50%] h-[50%] m-auto left-0 right-0 top-0 bottom-0`}
         style={{ backgroundColor: props.bgHex }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
         <Link
           className="flex h-full justify-center items-center"
           href={props.iframeSrc}
           target="_blank"
         >
-          <motion.video
+          <video
             playsInline
             autoPlay
             loop
             muted
             className="object-cover w-[90%]"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
           >
             <source src={props.videoPath} type="video/mp4" />
-          </motion.video>
+          </video>
         </Link>
-      </div>
+      </motion.div>
 
       <div className="z-0 py-[18px] px-[12px]">
         <div className="flex w-full justify-between">

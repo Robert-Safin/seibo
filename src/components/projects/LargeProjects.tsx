@@ -72,10 +72,11 @@ const Card: FC<Props> = (props) => {
         width={1000}
         height={1000}
         alt={props.title}
-        className="absolute -z-10 h-full object-cover"
+        className="absolute -z-20 h-full object-cover"
       />
+      <div className="absolute top-0 w-full h-full -z-10 bg-theme-black opacity-25 group-hover:opacity-0 transition-all duration-700"/>
       <div
-        className={`absolute z-10 w-[50%] h-[50%] m-auto left-0 right-0 top-0 bottom-0`}
+        className={`absolute z-10 w-[50%] h-[50%] m-auto left-0 right-0 top-0 bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700`}
         style={{ backgroundColor: props.bgHex }}
       >
         <Link

@@ -21,8 +21,8 @@ const SmallHero = () => {
             <Image
               priority
               src="/assets/hero/purple-f.png"
-              width={500}
-              height={500}
+              width={350}
+              height={200}
               alt="fallback"
               className="w-full h-full absolute top-0 -z-10 object-cover"
             />
@@ -31,9 +31,9 @@ const SmallHero = () => {
               autoPlay
               muted
               loop
-              width={500}
-              height={500}
-              className="h-full object-cover z-10"
+              width={350}
+              height={200}
+              className="h-full object-cover z-10 w-full"
             >
               <source src="/assets/hero/purple-fmt.mp4" type="video/mp4" />
             </video>
@@ -43,8 +43,8 @@ const SmallHero = () => {
             <Image
               priority
               src="/assets/hero/white-f.png"
-              width={500}
-              height={500}
+              width={350}
+              height={200}
               alt="fallback"
               className="w-full h-full absolute top-0 -z-10 object-cover"
             />
@@ -53,9 +53,9 @@ const SmallHero = () => {
               autoPlay
               muted
               loop
-              width={500}
-              height={500}
-              className="h-full object-cover z-10"
+              width={350}
+              height={200}
+              className="h-full object-cover z-10 w-full"
             >
               <source src="/assets/hero/white-fmt.mp4" type="video/mp4" />
             </video>
@@ -65,8 +65,8 @@ const SmallHero = () => {
             <Image
               priority
               src="/assets/hero/red-f.png"
-              width={500}
-              height={500}
+              width={350}
+              height={200}
               alt="fallback"
               className="w-full h-full absolute top-0 -z-10 object-cover"
             />
@@ -75,9 +75,9 @@ const SmallHero = () => {
               autoPlay
               muted
               loop
-              width={500}
-              height={500}
-              className="h-full object-cover z-10"
+              width={350}
+              height={200}
+              className="h-full object-cover z-10 w-full"
             >
               <source src="/assets/hero/red-fmt.mp4" type="video/mp4" />
             </video>
@@ -87,8 +87,8 @@ const SmallHero = () => {
             <Image
               priority
               src="/assets/hero/orange-f.png"
-              width={500}
-              height={500}
+              width={350}
+              height={200}
               alt="fallback"
               className="w-full h-full absolute top-0 -z-10 object-cover"
             />
@@ -97,9 +97,9 @@ const SmallHero = () => {
               autoPlay
               muted
               loop
-              width={500}
-              height={500}
-              className="h-[84px] object-cover z-10"
+              width={350}
+              height={200}
+              className="h-[84px] object-cover z-10 w-full"
             >
               <source src="/assets/hero/orange-fmt.mp4" type="video/mp4" />
             </video>
