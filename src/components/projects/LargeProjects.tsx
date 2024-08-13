@@ -67,6 +67,7 @@ const Card: FC<Props> = (props) => {
   return (
     <div className="relative w-full h-[50vw] z-0 group max-h-[921px]">
       <Image
+        priority
         src={props.imagePath}
         width={1000}
         height={1000}
@@ -85,7 +86,7 @@ const Card: FC<Props> = (props) => {
           <video
             autoPlay
             loop
-            // src={props.videoPath}
+            src={props.videoPath}
             muted
             className="object-cover w-[90%] opacity-0 group-hover:opacity-100 transition-all duration-700"
           >
