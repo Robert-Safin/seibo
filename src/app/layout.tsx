@@ -5,6 +5,7 @@ import './typography.css';
 import { FC } from "react";
 import { GeistSans } from "geist/font/sans";
 import Nav from "@/components/nav/Nav";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const eb_garamond = EB_Garamond({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ const RootLayout: FC<Props> = (props) => {
       >
         <Nav/>
         {props.children}
+        <SpeedInsights/>
       </body>
     </html>
   );
