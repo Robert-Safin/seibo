@@ -9,3 +9,7 @@
 .aspect-height {
   height: calc(33vw * 1.408);
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
