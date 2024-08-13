@@ -17,7 +17,7 @@ const LargeProjects = () => {
           title="Quantico"
           bgHex="#CEB267"
           iframeSrc="https://quanticotc.com"
-          videoPath="/assets/project-cards/quantico.mp4"
+          videoPath="/assets/project-cards/quantico-c.mp4"
         />
         <Card
           imagePath="/assets/project-cards/elysium.png"
@@ -25,7 +25,7 @@ const LargeProjects = () => {
           title="Elysium"
           bgHex="#4A0915"
           iframeSrc="https://elysium-beta.vercel.app/"
-          videoPath="/assets/project-cards/elysium.mp4"
+          videoPath="/assets/project-cards/elysium-c.mp4"
         />
         <Card
           imagePath="/assets/project-cards/symbobtic.png"
@@ -33,7 +33,7 @@ const LargeProjects = () => {
           title="Symbobtic"
           bgHex="#000000"
           iframeSrc="https://symbobtic.vercel.app/"
-          videoPath="/assets/project-cards/symbobtic.mp4"
+          videoPath="/assets/project-cards/symbobtic-c.mp4"
         />
         <Card
           imagePath="/assets/project-cards/gaes.png"
@@ -41,7 +41,7 @@ const LargeProjects = () => {
           title="GAES"
           bgHex="#989898"
           iframeSrc="https://gaes.ae/"
-          videoPath="/assets/project-cards/gaes.mp4"
+          videoPath="/assets/project-cards/gaes-c.mp4"
         />
       </div>
       <div className="flex justify-between pt-[36px] lg:pt-[64px]">
