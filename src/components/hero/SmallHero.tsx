@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const SmallHero = () => {
   return (
     <>
@@ -15,51 +17,89 @@ const SmallHero = () => {
           CURRENTLY IN: BALI, IDN
         </h4>
         <div className="flex flex-col space-y-3">
-          <video
-            playsInline
-            autoPlay
-            muted
-            loop
-            width={1000}
-            height={1000}
-            className="h-[48px] object-cover"
-          >
-            <source src="/assets/hero/purple-c.mp4" type="video/mp4" />
-          </video>
+          <div className="w-full h-[48px] relative">
+            <Image
+              src="/assets/hero/purple-f.png"
+              width={1000}
+              height={1000}
+              alt="fallback"
+              className="w-full h-full absolute top-0 -z-10 object-cover"
+            />
+            <video
+              playsInline
+              autoPlay
+              muted
+              loop
+              width={1000}
+              height={1000}
+              className="h-full object-cover"
+            >
+              <source src="/assets/hero/purple-c.mp4" type="video/mp4" />
+            </video>
+          </div>
 
-          <video
-            playsInline
-            autoPlay
-            muted
-            loop
-            width={1000}
-            height={1000}
-            className="h-[117px] object-cover"
-          >
-            <source src="/assets/hero/white-c.mp4" type="video/mp4" />
-          </video>
-          <video
-            playsInline
-            autoPlay
-            muted
-            loop
-            width={1000}
-            height={1000}
-            className="h-[61px] object-cover"
-          >
-            <source src="/assets/hero/red-c.mp4" type="video/mp4" />
-          </video>
-          <video
-            playsInline
-            autoPlay
-            muted
-            loop
-            width={1000}
-            height={1000}
-            className="h-[84px] object-cover"
-          >
-            <source src="/assets/hero/orange-c.mp4" type="video/mp4" />
-          </video>
+          <div className="w-full h-[117px] relative">
+            <Image
+              src="/assets/hero/white-f.png"
+              width={1000}
+              height={1000}
+              alt="fallback"
+              className="w-full h-full absolute top-0 -z-10 object-cover"
+            />
+            <video
+              playsInline
+              autoPlay
+              muted
+              loop
+              width={1000}
+              height={1000}
+              className="h-full object-cover"
+            >
+              <source src="/assets/hero/white-c.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div className="w-full h-[61px] relative">
+            <Image
+              src="/assets/hero/red-f.png"
+              width={1000}
+              height={1000}
+              alt="fallback"
+              className="w-full h-full absolute top-0 -z-10 object-cover"
+            />
+            <video
+              playsInline
+              autoPlay
+              muted
+              loop
+              width={1000}
+              height={1000}
+              className="h-full object-cover"
+            >
+              <source src="/assets/hero/red-c.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div className="w-full h-[84px] relative">
+            <Image
+              src="/assets/hero/orange-f.png"
+              width={1000}
+              height={1000}
+              alt="fallback"
+              className="w-full h-full absolute top-0 -z-10 object-cover"
+            />
+            <video
+              playsInline
+              autoPlay
+              muted
+              loop
+              width={1000}
+              height={1000}
+              className="h-[84px] object-cover"
+            >
+              <source src="/assets/hero/orange-c.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
     </>
