@@ -18,8 +18,8 @@ const LargeNav = () => {
         </div>
         <Image
           src={"/assets/logo/logo.svg"}
-          width={500}
-          height={500}
+          width={300}
+          height={300}
           alt="Seibo Logo"
           className="w-[136px] h-[41.5px]"
         />

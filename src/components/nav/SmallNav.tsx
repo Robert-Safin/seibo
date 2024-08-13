@@ -6,8 +6,8 @@ const SmallNav = () => {
       <nav className="flex w-screen justify-between x-pad pt-[16px]">
         <Image
           src={"/assets/logo/logo.svg"}
-          width={500}
-          height={500}
+          width={300}
+          height={300}
           alt="Seibo Logo"
           className="w-[92px] h-[25px]
                 md:w-[120px] md:h-[37px]
