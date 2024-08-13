@@ -88,7 +88,7 @@ const Card: FC<Props> = (props) => {
         >
           <motion.video
             playsInline
-            //autoPlay
+            autoPlay
             loop
             muted
             className="object-cover w-[90%]"

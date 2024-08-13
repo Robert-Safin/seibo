@@ -28,8 +28,7 @@ const SmallHero = () => {
             />
             <video
               playsInline
-              controls
-              //autoPlay
+              autoPlay
               muted
               loop
               width={500}
@@ -51,8 +50,7 @@ const SmallHero = () => {
             />
             <video
               playsInline
-              controls
-              //autoPlay
+              autoPlay
               muted
               loop
               width={500}
@@ -74,8 +72,7 @@ const SmallHero = () => {
             />
             <video
               playsInline
-              controls
-              //autoPlay
+              autoPlay
               muted
               loop
               width={500}
@@ -97,8 +94,7 @@ const SmallHero = () => {
             />
             <video
               playsInline
-              controls
-              //autoPlay
+              autoPlay
               muted
               loop
               width={500}
