@@ -17,13 +17,14 @@ const LargeHero = () => {
             />
             <video
               playsInline
+              autoPlay
               muted
               loop
               width={1000}
               height={1000}
               className="h-[20vh] object-cover w-full z-10"
             >
-              <source src="/assets/hero/purple-c.mp4" type="video/mp4" />
+              <source src="/assets/hero/purple-fmt.mp4" type="video/mp4" />
             </video>
           </div>
 
@@ -39,13 +40,14 @@ const LargeHero = () => {
               />
               <video
                 playsInline
+                autoPlay
                 muted
                 loop
                 width={1000}
                 height={1000}
                 className="h-[20vh] object-cover w-full "
               >
-                <source src="/assets/hero/white-c.mp4" type="video/mp4" />
+                <source src="/assets/hero/white-fmt.mp4" type="video/mp4" />
               </video>
             </div>
             <div className="h-[20vh] w-1/3 relative z-0">
@@ -59,13 +61,14 @@ const LargeHero = () => {
               />
               <video
                 playsInline
+                autoPlay
                 muted
                 loop
                 width={1000}
                 height={1000}
                 className="h-[20vh] object-cover w-full"
               >
-                <source src="/assets/hero/green-c.mp4" type="video/mp4" />
+                <source src="/assets/hero/green-fmt.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
@@ -80,13 +83,14 @@ const LargeHero = () => {
             />
             <video
               playsInline
+              autoPlay
               muted
               loop
               width={1000}
               height={1000}
               className="h-[20vh] object-cover w-full"
             >
-              <source src="/assets/hero/red-c.mp4" type="video/mp4" />
+              <source src="/assets/hero/red-fmt.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="flex space-x-3">
@@ -112,13 +116,14 @@ const LargeHero = () => {
               />
               <video
                 playsInline
+                autoPlay
                 muted
                 loop
                 width={1000}
                 height={1000}
                 className="h-[224px] object-cover w-full"
               >
-                <source src="/assets/hero/orange-c.mp4" type="video/mp4" />
+                <source src="/assets/hero/orange-fmt.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
