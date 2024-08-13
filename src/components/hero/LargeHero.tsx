@@ -45,7 +45,7 @@ const LargeHero = () => {
                 loop
                 width={1000}
                 height={1000}
-                className="h-[20vh] object-cover w-full "
+                className="h-[20vh] object-cover w-full z-10"
               >
                 <source src="/assets/hero/white-fmt.mp4" type="video/mp4" />
               </video>
@@ -66,7 +66,7 @@ const LargeHero = () => {
                 loop
                 width={1000}
                 height={1000}
-                className="h-[20vh] object-cover w-full"
+                className="h-[20vh] object-cover w-full z-10"
               >
                 <source src="/assets/hero/green-fmt.mp4" type="video/mp4" />
               </video>
@@ -88,7 +88,7 @@ const LargeHero = () => {
               loop
               width={1000}
               height={1000}
-              className="h-[20vh] object-cover w-full"
+              className="h-[20vh] object-cover w-full z-10"
             >
               <source src="/assets/hero/red-fmt.mp4" type="video/mp4" />
             </video>
@@ -121,7 +121,7 @@ const LargeHero = () => {
                 loop
                 width={1000}
                 height={1000}
-                className="h-[224px] object-cover w-full"
+                className="h-[224px] object-cover w-full z-10"
               >
                 <source src="/assets/hero/orange-fmt.mp4" type="video/mp4" />
               </video>
