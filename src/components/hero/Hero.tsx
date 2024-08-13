@@ -7,9 +7,9 @@ const Hero = () => {
       <div className="md:hidden">
         <SmallHero />
       </div>
-      {/* <div className="hidden md:block">
+      <div className="hidden md:block">
         <LargeHero />
-      </div> */}
+      </div>
     </>
   );
 };
