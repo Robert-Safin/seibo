@@ -21,7 +21,7 @@ const SmallProjects = () => {
           title="Quantico"
           bgHex="#CEB267"
           iframeSrc="https://quanticotc.com/"
-          videoPath="/assets/project-cards/quantico2.mp4"
+          videoPath="/assets/project-cards/quantico.mp4"
         />
         <Card
           imagePath="/assets/project-cards/elysium.png"
@@ -29,7 +29,7 @@ const SmallProjects = () => {
           title="Elysium"
           bgHex="#4A0915"
           iframeSrc="https://elysium-beta.vercel.app/"
-          videoPath="/assets/project-cards/elysium2.mp4"
+          videoPath="/assets/project-cards/elysium.mp4"
         />
         <Card
           imagePath="/assets/project-cards/symbobtic.png"
@@ -37,7 +37,7 @@ const SmallProjects = () => {
           title="Symbobtic"
           bgHex="#000000"
           iframeSrc="https://symbobtic.vercel.app/"
-          videoPath="/assets/project-cards/symbobtic2.mp4"
+          videoPath="/assets/project-cards/symbobtic.mp4"
         />
         <Card
           imagePath="/assets/project-cards/gaes.png"
@@ -45,7 +45,7 @@ const SmallProjects = () => {
           title="GAES"
           bgHex="#989898"
           iframeSrc="https://gaes.ae/"
-          videoPath="/assets/project-cards/gaes2.mp4"
+          videoPath="/assets/project-cards/gaes.mp4"
         />
       </div>
       <div className="flex justify-between pt-[36px]">
@@ -90,7 +90,6 @@ const Card: FC<Props> = (props) => {
             playsInline
             autoPlay
             loop
-            // src={props.videoPath}
             muted
             className="object-cover w-[90%]"
             initial={{ opacity: 0 }}
