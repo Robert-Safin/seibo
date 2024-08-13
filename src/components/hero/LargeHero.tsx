@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 const LargeHero = () => {
@@ -15,6 +16,7 @@ const LargeHero = () => {
               className="w-full h-full absolute top-0 -z-10 object-cover"
             />
             <video
+              playsInline
               autoPlay
               muted
               loop
@@ -37,6 +39,7 @@ const LargeHero = () => {
                 className="w-full h-full absolute top-0 -z-10 object-cover"
               />
               <video
+                playsInline
                 autoPlay
                 muted
                 loop
@@ -57,6 +60,7 @@ const LargeHero = () => {
                 className="w-full h-full absolute top-0 -z-10 object-cover"
               />
               <video
+                playsInline
                 autoPlay
                 muted
                 loop
@@ -78,6 +82,7 @@ const LargeHero = () => {
               className="w-full h-full absolute top-0 -z-10 object-cover"
             />
             <video
+              playsInline
               autoPlay
               muted
               loop
@@ -110,6 +115,7 @@ const LargeHero = () => {
                 className="w-full h-full absolute top-0 -z-10 object-cover"
               />
               <video
+                playsInline
                 autoPlay
                 muted
                 loop

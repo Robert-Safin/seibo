@@ -21,8 +21,8 @@ const SmallHero = () => {
             <Image
               priority
               src="/assets/hero/purple-f.png"
-              width={1000}
-              height={1000}
+              width={500}
+              height={500}
               alt="fallback"
               className="w-full h-full absolute top-0 -z-10 object-cover"
             />
@@ -31,8 +31,8 @@ const SmallHero = () => {
               autoPlay
               muted
               loop
-              width={1000}
-              height={1000}
+              width={500}
+              height={500}
               className="h-full object-cover"
             >
               <source src="/assets/hero/purple-c.mp4" type="video/mp4" />
@@ -43,8 +43,8 @@ const SmallHero = () => {
             <Image
               priority
               src="/assets/hero/white-f.png"
-              width={1000}
-              height={1000}
+              width={500}
+              height={500}
               alt="fallback"
               className="w-full h-full absolute top-0 -z-10 object-cover"
             />
@@ -53,8 +53,8 @@ const SmallHero = () => {
               autoPlay
               muted
               loop
-              width={1000}
-              height={1000}
+              width={500}
+              height={500}
               className="h-full object-cover"
             >
               <source src="/assets/hero/white-c.mp4" type="video/mp4" />
@@ -65,8 +65,8 @@ const SmallHero = () => {
             <Image
               priority
               src="/assets/hero/red-f.png"
-              width={1000}
-              height={1000}
+              width={500}
+              height={500}
               alt="fallback"
               className="w-full h-full absolute top-0 -z-10 object-cover"
             />
@@ -75,8 +75,8 @@ const SmallHero = () => {
               autoPlay
               muted
               loop
-              width={1000}
-              height={1000}
+              width={500}
+              height={500}
               className="h-full object-cover"
             >
               <source src="/assets/hero/red-c.mp4" type="video/mp4" />
@@ -87,8 +87,8 @@ const SmallHero = () => {
             <Image
               priority
               src="/assets/hero/orange-f.png"
-              width={1000}
-              height={1000}
+              width={500}
+              height={500}
               alt="fallback"
               className="w-full h-full absolute top-0 -z-10 object-cover"
             />
@@ -97,8 +97,8 @@ const SmallHero = () => {
               autoPlay
               muted
               loop
-              width={1000}
-              height={1000}
+              width={500}
+              height={500}
               className="h-[84px] object-cover"
             >
               <source src="/assets/hero/orange-c.mp4" type="video/mp4" />
