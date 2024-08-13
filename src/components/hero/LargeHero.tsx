@@ -17,7 +17,8 @@ const LargeHero = () => {
             />
             <video
               playsInline
-              autoPlay
+              controls
+              //autoPlay
               muted
               loop
               width={1000}
@@ -40,7 +41,8 @@ const LargeHero = () => {
               />
               <video
                 playsInline
-                autoPlay
+                controls
+                //autoPlay
                 muted
                 loop
                 width={1000}
@@ -61,7 +63,8 @@ const LargeHero = () => {
               />
               <video
                 playsInline
-                autoPlay
+                controls
+                //autoPlay
                 muted
                 loop
                 width={1000}
@@ -83,7 +86,8 @@ const LargeHero = () => {
             />
             <video
               playsInline
-              autoPlay
+              controls
+              //autoPlay
               muted
               loop
               width={1000}
@@ -116,7 +120,8 @@ const LargeHero = () => {
               />
               <video
                 playsInline
-                autoPlay
+                controls
+                //autoPlay
                 muted
                 loop
                 width={1000}

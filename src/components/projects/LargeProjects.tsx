@@ -84,7 +84,8 @@ const Card: FC<Props> = (props) => {
           target="_blank"
         >
           <video
-            autoPlay
+            playsInline
+            //autoPlay
             loop
             src={props.videoPath}
             muted
