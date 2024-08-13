@@ -1,17 +1,23 @@
-import LargeHero from "./LargeHero";
+'use client'
+import { useEffect, useState } from "react";
 import SmallHero from "./SmallHero";
+import LargeHero from "./LargeHero";
 
 const Hero = () => {
-  return (
-    <>
-      <div className="md:hidden">
-        <SmallHero />
-      </div>
-      <div className="hidden md:block">
-        <LargeHero />
-      </div>
-    </>
-  );
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  return <>{isMobile ? <SmallHero /> : <LargeHero />}</>;
 };
 
 export default Hero;

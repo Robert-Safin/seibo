@@ -1,18 +1,23 @@
-import LargeProjects from "./LargeProjects"
-import SmallProjects from "./SmallProjects"
-
+"use client";
+import { useEffect, useState } from "react";
+import SmallProjects from "./SmallProjects";
+import LargeProjects from "./LargeProjects";
 
 const Projects = () => {
-  return (
-    <>
-    <div className="lg:hidden">
-      <SmallProjects/>
-    </div>
-    <div className="hidden lg:block">
-      <LargeProjects/>
-    </div>
-    </>
-  )
-}
+  const [isMobile, setIsMobile] = useState(false);
 
-export default Projects
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  return <>{isMobile ? <SmallProjects /> : <LargeProjects />}</>;
+};
+
+export default Projects;
