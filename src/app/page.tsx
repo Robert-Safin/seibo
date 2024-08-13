@@ -6,7 +6,7 @@ import Services from "@/components/services/Services";
 export default function Home() {
   return (
     <main className="bg-theme-black min-h-screen">
-      {/* <Hero /> */}
+      <Hero />
       <Services />
       <Projects />
       <Contact />
