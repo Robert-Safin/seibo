@@ -7,6 +7,7 @@ const LargeHero = () => {
         <div className="flex flex-col space-y-3 pt-[120px]">
           <div className="h-[20vh] w-full relative z-0">
             <Image
+              priority
               src="/assets/hero/purple-f.png"
               width={1000}
               height={1000}
@@ -28,6 +29,7 @@ const LargeHero = () => {
           <div className="flex space-x-3">
             <div className="h-[20vh] w-2/3 relative z-0">
               <Image
+                priority
                 src="/assets/hero/white-f.png"
                 width={1000}
                 height={1000}
@@ -47,6 +49,7 @@ const LargeHero = () => {
             </div>
             <div className="h-[20vh] w-1/3 relative z-0">
               <Image
+                priority
                 src="/assets/hero/green-f.png"
                 width={1000}
                 height={1000}
@@ -67,6 +70,7 @@ const LargeHero = () => {
           </div>
           <div className="h-[20vh] w-full relative z-0">
             <Image
+              priority
               src="/assets/hero/red-f.png"
               width={1000}
               height={1000}
@@ -98,6 +102,7 @@ const LargeHero = () => {
             </div>
             <div className="h-[224px] w-full relative z-0">
               <Image
+                priority
                 src="/assets/hero/orange-f.png"
                 width={1000}
                 height={1000}

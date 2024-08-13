@@ -8,8 +8,8 @@ export default function Home() {
     <main className="bg-theme-black min-h-screen">
       <Hero />
       <Services />
-      <Projects />
-      <Contact />
+      {/* <Projects />
+      <Contact /> */}
     </main>
   );
 }

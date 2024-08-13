@@ -19,6 +19,7 @@ const SmallHero = () => {
         <div className="flex flex-col space-y-3">
           <div className="w-full h-[48px] relative">
             <Image
+              priority
               src="/assets/hero/purple-f.png"
               width={1000}
               height={1000}
@@ -40,6 +41,7 @@ const SmallHero = () => {
 
           <div className="w-full h-[117px] relative">
             <Image
+              priority
               src="/assets/hero/white-f.png"
               width={1000}
               height={1000}
@@ -61,6 +63,7 @@ const SmallHero = () => {
 
           <div className="w-full h-[61px] relative">
             <Image
+              priority
               src="/assets/hero/red-f.png"
               width={1000}
               height={1000}
@@ -82,6 +85,7 @@ const SmallHero = () => {
 
           <div className="w-full h-[84px] relative">
             <Image
+              priority
               src="/assets/hero/orange-f.png"
               width={1000}
               height={1000}
