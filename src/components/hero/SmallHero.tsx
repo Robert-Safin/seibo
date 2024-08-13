@@ -24,7 +24,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[48px] object-cover"
           >
-            <source src="/assets/hero/purple2.mp4" type="video/mp4" />
+            <source src="/assets/hero/purple.mp4" type="video/mp4" />
           </video>
 
           <video
@@ -36,7 +36,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[117px] object-cover"
           >
-            <source src="/assets/hero/white2.mp4" type="video/mp4" />
+            <source src="/assets/hero/white.mp4" type="video/mp4" />
           </video>
           <video
             playsInline
@@ -47,7 +47,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[61px] object-cover"
           >
-            <source src="/assets/hero/red2.mp4" type="video/mp4" />
+            <source src="/assets/hero/red.mp4" type="video/mp4" />
           </video>
           <video
             playsInline
@@ -58,7 +58,7 @@ const SmallHero = () => {
             height={1000}
             className="h-[84px] object-cover"
           >
-            <source src="/assets/hero/orange2.mp4" type="video/mp4" />
+            <source src="/assets/hero/orange.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
